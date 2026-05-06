@@ -1,0 +1,19 @@
+{
+  "_comment": "Benchmark data for COAS dashboard comparisons. Update these values as research improves.",
+  "_lastUpdated": "May 2025",
+
+  "avgSessionDurationSeconds": 140,
+  "_avgSessionDurationSeconds_note": "Higher ed national avg ~2:00-2:20 (120-140 sec). Source: Google Analytics benchmarks for education sector.",
+
+  "engagementRatePct": 50,
+  "_engagementRatePct_note": "Typical higher ed engagement rate ~50%. GA4 engagement = sessions lasting 10s+ or 2+ pageviews. Source: industry benchmarks.",
+
+  "seoScoreGood": 80,
+  "_seoScoreGood_note": "Siteimprove considers 80+ a good SEO score.",
+
+  "accessibilityScoreGood": 80,
+  "_accessibilityScoreGood_note": "Siteimprove considers 80+ a good accessibility score. WCAG 2.1 AA compliance target.",
+
+  "peerAvgSessions": 0,
+  "_peerAvgSessions_note": "Set this to the 90-day session count of a peer college website if you have that data. Leave at 0 to hide the comparison. Example: 45000 for a comparable R1 college of arts and sciences."
+}
