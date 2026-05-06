@@ -1,33 +1,405 @@
-```json
 {
-  "lastUpdated": "pending",
-  "reportPeriod": { "label": "Data loading — check back after first script run" },
+  "lastUpdated": "2026-05-06T20:45:26.448Z",
+  "reportPeriod": {
+    "startDate": "2026-02-05",
+    "endDate": "2026-05-06",
+    "label": "Feb 5, 2026 ? May 6, 2026"
+  },
   "college": "College of Arts & Sciences",
   "domain": "artsci.tamu.edu",
   "ga4": {
-    "sessions":         { "value": "—", "raw": 0 },
-    "newUsers":         { "value": "—", "raw": 0 },
-    "engagementRate":   { "value": "—", "raw": 0 },
-    "avgDuration":      { "value": "—", "raw": 0 },
-    "pageViews":        { "value": "—", "raw": 0 },
-    "admissionsVisits": { "value": "—", "raw": 0 },
-    "topPages":         [],
-    "monthlyTrend":     { "values": [0,0,0,0,0,0], "labels": ["","","","","",""] },
-    "deptBreakdown":    []
+    "sessions": {
+      "value": "842.9k",
+      "raw": 842909
+    },
+    "newUsers": {
+      "value": "562.3k",
+      "raw": 562306
+    },
+    "engagementRate": {
+      "value": "35%",
+      "raw": 35
+    },
+    "avgDuration": {
+      "value": "2:49",
+      "raw": 169
+    },
+    "pageViews": {
+      "value": "1291.5k",
+      "raw": 1291538
+    },
+    "admissionsVisits": {
+      "value": "3.1k",
+      "raw": 3108
+    },
+    "topPages": [
+      {
+        "path": "/atmos-science/index.html",
+        "views": 42136
+      },
+      {
+        "path": "/",
+        "views": 30575
+      },
+      {
+        "path": "/geology-geophysics/index.html",
+        "views": 29571
+      },
+      {
+        "path": "/global-lang-cultures/index.html",
+        "views": 19867
+      },
+      {
+        "path": "/english/index.html",
+        "views": 19266
+      }
+    ],
+    "monthlyTrend": {
+      "values": [
+        197134,
+        231883,
+        297585,
+        322511,
+        236161,
+        37610
+      ],
+      "labels": [
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May"
+      ]
+    },
+    "deptBreakdown": [
+      {
+        "name": "Mathematics",
+        "path": "/mathematics/",
+        "sessions": 73715,
+        "newUsers": 20975
+      },
+      {
+        "name": "Atmospheric Sciences",
+        "path": "/atmos-science/",
+        "sessions": 45064,
+        "newUsers": 41097
+      },
+      {
+        "name": "Chemistry",
+        "path": "/chemistry/",
+        "sessions": 44951,
+        "newUsers": 17203
+      },
+      {
+        "name": "Psychological & Brain Sciences",
+        "path": "/psychological-brain-sciences/",
+        "sessions": 43299,
+        "newUsers": 16428
+      },
+      {
+        "name": "Biology",
+        "path": "/biology/",
+        "sessions": 40509,
+        "newUsers": 17120
+      },
+      {
+        "name": "Geology & Geophysics",
+        "path": "/geology-geophysics/",
+        "sessions": 34516,
+        "newUsers": 30180
+      },
+      {
+        "name": "Global Languages & Cultures",
+        "path": "/global-lang-cultures/",
+        "sessions": 22913,
+        "newUsers": 18443
+      },
+      {
+        "name": "Economics",
+        "path": "/economics/",
+        "sessions": 22789,
+        "newUsers": 8880
+      },
+      {
+        "name": "English",
+        "path": "/english/",
+        "sessions": 22163,
+        "newUsers": 17837
+      },
+      {
+        "name": "Geography",
+        "path": "/geography/",
+        "sessions": 18264,
+        "newUsers": 15142
+      },
+      {
+        "name": "Sociology",
+        "path": "/sociology/",
+        "sessions": 17383,
+        "newUsers": 13987
+      },
+      {
+        "name": "Statistics",
+        "path": "/statistics/",
+        "sessions": 15519,
+        "newUsers": 7453
+      },
+      {
+        "name": "Physics & Astronomy",
+        "path": "/physics-astronomy/",
+        "sessions": 12971,
+        "newUsers": 7069
+      },
+      {
+        "name": "Communication & Journalism",
+        "path": "/comm-journalism/",
+        "sessions": 12704,
+        "newUsers": 4451
+      },
+      {
+        "name": "Philosophy",
+        "path": "/philosophy/",
+        "sessions": 12514,
+        "newUsers": 8072
+      },
+      {
+        "name": "Oceanography",
+        "path": "/oceanography/",
+        "sessions": 12230,
+        "newUsers": 10066
+      },
+      {
+        "name": "History",
+        "path": "/history/",
+        "sessions": 11673,
+        "newUsers": 8482
+      },
+      {
+        "name": "Anthropology",
+        "path": "/anthropology/",
+        "sessions": 11081,
+        "newUsers": 9367
+      }
+    ]
   },
   "siteimprove": {
     "scope": "artsci.tamu.edu (Cascade sites)",
-    "accessibilityScore": { "value": "—", "raw": 0 },
-    "seoScore":           { "value": "—", "raw": 0 },
-    "brokenLinks":        { "value": "—", "raw": 0 },
-    "qualityIssues":      { "value": "—", "raw": 0 }
+    "accessibilityScore": {
+      "value": "See Siteimprove",
+      "raw": 0
+    },
+    "seoScore": {
+      "value": "82",
+      "raw": 82
+    },
+    "brokenLinks": {
+      "value": "1329",
+      "raw": 1329
+    },
+    "qualityIssues": {
+      "value": "140",
+      "raw": 140
+    }
   },
   "freshdesk": {
-    "ticketVolume":    { "value": "—", "raw": 0 },
-    "resolutionRate":  { "value": "—", "raw": 0 },
-    "avgResponseTime": { "value": "—", "raw": 0 },
-    "csatScore":       { "value": "—", "raw": 0 }
+    "ticketVolume": {
+      "value": "100",
+      "raw": 100
+    },
+    "resolutionRate": {
+      "value": "88%",
+      "raw": 88
+    },
+    "avgResponseTime": {
+      "value": "3.8h",
+      "raw": "3.8"
+    },
+    "csatScore": {
+      "value": "N/A",
+      "raw": "N/A"
+    }
   },
-  "centersInventory": []
+  "centersInventory": [
+    {
+      "name": "Race and Ethnic Studies Institute",
+      "url": "https://liberalarts.tamu.edu/resi/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Glasscock Center for Humanities Research",
+      "url": "https://liberalarts.tamu.edu/glasscock/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Center of Digital Humanities Research",
+      "url": "https://liberalarts.tamu.edu/codhr/",
+      "platform": "WordPress",
+      "monitored": true
+    },
+    {
+      "name": "Center for the Study of First Americans",
+      "url": "https://liberalarts.tamu.edu/csfa/",
+      "platform": "WordPress",
+      "monitored": true
+    },
+    {
+      "name": "Texas Research Data Center",
+      "url": "https://liberalarts.tamu.edu/txrdc/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Berg-Hughes Center",
+      "url": "https://berg-hughes.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    },
+    {
+      "name": "Ctr for Approximation & Mathematical Data",
+      "url": "https://sites.google.com/tamu.edu/camda/",
+      "platform": "Google Sites",
+      "monitored": true
+    },
+    {
+      "name": "Ctr for Atmospheric Chemistry & Environment",
+      "url": "https://cace.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    },
+    {
+      "name": "Center for Biological Clocks Research",
+      "url": "https://clocks.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Ctr for Chemical Characterization & Analysis",
+      "url": "https://sites.google.com/view/elemental-analysis-laboratory/",
+      "platform": "Google Sites",
+      "monitored": true
+    },
+    {
+      "name": "Ctr for Electrochemical Systems & H Research",
+      "url": "http://www.txpec.net/",
+      "platform": "Unknown",
+      "monitored": true
+    },
+    {
+      "name": "Ctr for Maritime Archaeology & Conservation",
+      "url": "https://nautarch.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Ctr for Mathematics and Science Education",
+      "url": "https://cmse.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Center for Statistical Bioinformatics",
+      "url": "https://statbio.stat.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": true
+    },
+    {
+      "name": "Ctr for Surface Science & Mechanochemistry",
+      "url": "https://www.chem.tamu.edu/cmcc/",
+      "platform": "HTML/CSS",
+      "monitored": false
+    },
+    {
+      "name": "Center for Tectonophysics",
+      "url": "https://tectono.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    },
+    {
+      "name": "Center for Theoretical Physics",
+      "url": "https://iqse.tamu.edu/ctp/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Cyclotron Institute",
+      "url": "https://cyclotron.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Geochemical & Environmental Research Group",
+      "url": "https://gerg.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    },
+    {
+      "name": "Mitchell Institute for Physics & Astronomy",
+      "url": "https://mitchell.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Inst. for Applied Math & Computational Science",
+      "url": "https://iamcs.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Institute for Scientific Computation",
+      "url": "https://isc.tamu.edu/",
+      "platform": "HTML/CSS",
+      "monitored": false
+    },
+    {
+      "name": "Institute for Quantum Science and Engineering",
+      "url": "https://iqse.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Institute of Nautical Archaeology",
+      "url": "https://nauticalarch.org/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Laboratory for Synthetic Biologic Interactions",
+      "url": "https://lsbi.chem.tamu.edu/",
+      "platform": "HTML/CSS",
+      "monitored": false
+    },
+    {
+      "name": "Nuclear Solutions Institute",
+      "url": "https://nsi.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Office of the Texas State Climatologist",
+      "url": "https://climatexas.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    },
+    {
+      "name": "Public Policy Research Institute",
+      "url": "https://ppri.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Southern Regional Climate Center",
+      "url": "https://www.srcc.tamu.edu/",
+      "platform": "HTML/CSS",
+      "monitored": false
+    },
+    {
+      "name": "Texas Center for Extreme Weather",
+      "url": "https://texasclimate.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    }
+  ]
 }
-```
