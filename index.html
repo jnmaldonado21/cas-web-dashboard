@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.s1 {font: 12.0px '.SF NS'; font-kerning: none; color: #181a1e; background-color: #ffffff; -webkit-text-stroke: 0px #181a1e}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;CAS Web Team — Performance Report&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&amp;family=Work+Sans:wght@400;500;600&amp;family=Open+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* =====================================================</p>
+<p class="p1"><span class="Apple-converted-space">       </span>AGGIE UX BRAND TOKENS</p>
+<p class="p1"><span class="Apple-converted-space">       </span>Texas A&amp;M MarComm brand guide</p>
+<p class="p1"><span class="Apple-converted-space">       </span>Oswald = display/headlines</p>
+<p class="p1"><span class="Apple-converted-space">       </span>Work Sans = UI labels</p>
+<p class="p1"><span class="Apple-converted-space">       </span>Open Sans = body copy</p>
+<p class="p1"><span class="Apple-converted-space">    </span>===================================================== */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--maroon-primary: #500000;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--maroon-dark:<span class="Apple-converted-space">    </span>#3c001c;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--maroon-mid: <span class="Apple-converted-space">    </span>#732f2f;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--maroon-light: <span class="Apple-converted-space">  </span>#a85050;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--maroon-pale:<span class="Apple-converted-space">    </span>#d1a0a0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gray-100: <span class="Apple-converted-space">      </span>#f6f6f6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gray-200: <span class="Apple-converted-space">      </span>#eaeaea;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gray-300: <span class="Apple-converted-space">      </span>#d1d1d1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gray-500: <span class="Apple-converted-space">      </span>#707070;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gray-700: <span class="Apple-converted-space">      </span>#535353;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gray-800: <span class="Apple-converted-space">      </span>#3e3e3e;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gray-900: <span class="Apple-converted-space">      </span>#202020;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--green-pos:<span class="Apple-converted-space">      </span>#3c6b1a;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--white:<span class="Apple-converted-space">          </span>#ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body { font-family: 'Open Sans', sans-serif; color: var(--gray-900); background: var(--gray-100); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.report { max-width: 920px; margin: 0 auto; padding: 0 16px 48px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Loading */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.loading { position: fixed; inset: 0; background: var(--maroon-primary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex; flex-direction: column; align-items: center; justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 100; transition: opacity 0.4s; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.loading.hidden { opacity: 0; pointer-events: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.loading h2 { font-family: 'Oswald', sans-serif; font-size: 22px; text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.05em; color: var(--white); margin-bottom: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.loading p<span class="Apple-converted-space">  </span>{ font-size: 13px; color: var(--maroon-pale); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Masthead */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.masthead { background: var(--maroon-primary); color: var(--white);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 2rem 1.5rem 1.5rem; margin-bottom: 1.5rem; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.masthead-eyebrow { font-family: 'Work Sans', sans-serif; font-size: 10px; font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.12em; text-transform: uppercase; color: var(--maroon-pale); margin-bottom: 6px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.masthead h1 { font-family: 'Oswald', sans-serif; font-size: clamp(22px, 5vw, 32px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.15; color: var(--white); margin-bottom: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.masthead-sub { font-size: 13px; color: #d1d1d1; line-height: 1.55; max-width: 540px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.masthead-date { font-size: 11px; color: #a7a7a7; margin-top: 10px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* AI banner */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ai-banner { background: var(--maroon-dark); border-left: 4px solid var(--maroon-pale);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px 16px; margin-bottom: 1.5rem; display: flex; gap: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ai-badge { font-family: 'Work Sans', sans-serif; font-size: 9px; font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.08em; text-transform: uppercase; color: var(--maroon-pale);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.1); border-radius: 2px; padding: 3px 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>white-space: nowrap; flex-shrink: 0; margin-top: 2px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ai-text { font-size: 13px; color: #eaeaea; line-height: 1.6; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ai-text strong { color: var(--white); font-weight: 600; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Story cards */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card { background: var(--white); border: 1px solid var(--gray-300);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 2px; margin-bottom: 14px; overflow: hidden; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-head { padding: 18px 18px 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.story-num { font-family: 'Work Sans', sans-serif; font-size: 10px; font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.1em; text-transform: uppercase; color: var(--maroon-primary); margin-bottom: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.story-hed { font-family: 'Oswald', sans-serif; font-size: clamp(18px, 4vw, 24px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600; text-transform: uppercase; letter-spacing: 0.02em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.2; color: var(--gray-900); margin-bottom: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.story-lede { font-size: 13px; color: var(--gray-800); line-height: 1.65;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 16px; max-width: 640px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.story-lede strong { font-weight: 600; color: var(--gray-900); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Stats row */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.stats { display: flex; flex-wrap: wrap; border-top: 1px solid var(--gray-200); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.stat { flex: 1; min-width: 110px; padding: 14px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-right: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.stat:last-child { border-right: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.stat-n { font-family: 'Oswald', sans-serif; font-size: 30px; font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--maroon-primary); line-height: 1; margin-bottom: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.stat-l { font-family: 'Work Sans', sans-serif; font-size: 10px; font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray-500); line-height: 1.3; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.stat-c { font-size: 11px; color: var(--gray-700); margin-top: 4px; line-height: 1.4; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Charts */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chart { padding: 14px 18px 16px; border-top: 1px solid var(--gray-200); background: var(--gray-100); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chart-lbl { font-family: 'Work Sans', sans-serif; font-size: 10px; font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray-500); margin-bottom: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.two-col { display: grid; grid-template-columns: 2fr 1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.two-col .chart:first-child { border-right: 1px solid var(--gray-200); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Sparkline */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sparks { display: flex; align-items: flex-end; gap: 5px; height: 52px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.spark-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.spark-bar { width: 100%; border-radius: 1px 1px 0 0; background: var(--maroon-primary); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.spark-mo<span class="Apple-converted-space">  </span>{ font-size: 9px; color: var(--gray-500); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Top pages */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.pages { display: flex; flex-direction: column; gap: 7px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.page-row { display: flex; align-items: center; gap: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.page-path { font-size: 11px; color: var(--gray-800); width: 100px; flex-shrink: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.page-track { flex: 1; height: 6px; background: var(--gray-200); border-radius: 2px; overflow: hidden; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.page-fill<span class="Apple-converted-space">  </span>{ height: 100%; background: var(--maroon-primary); border-radius: 2px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.page-views { font-size: 11px; color: var(--gray-700); width: 38px; text-align: right; flex-shrink: 0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Dept breakdown */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dept-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dept-item { display: flex; align-items: center; gap: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dept-name { font-size: 11px; color: var(--gray-800); flex: 1; min-width: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dept-track { width: 60px; height: 5px; background: var(--gray-200); border-radius: 2px; overflow: hidden; flex-shrink: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dept-fill<span class="Apple-converted-space">  </span>{ height: 100%; background: var(--maroon-primary); border-radius: 2px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dept-val <span class="Apple-converted-space">  </span>{ font-size: 11px; color: var(--gray-700); width: 32px; text-align: right; flex-shrink: 0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Score bars */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.score-row<span class="Apple-converted-space">  </span>{ display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.score-row:last-child { margin-bottom: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.score-name { font-size: 12px; color: var(--gray-800); width: 120px; flex-shrink: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.score-track { flex: 1; height: 9px; background: var(--gray-300); border-radius: 2px; overflow: hidden; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.score-fill<span class="Apple-converted-space">  </span>{ height: 100%; background: var(--maroon-primary); border-radius: 2px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.score-val <span class="Apple-converted-space">  </span>{ font-family: 'Work Sans', sans-serif; font-size: 12px; font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--maroon-primary); width: 32px; text-align: right; flex-shrink: 0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Funnel */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.funnel-row { display: flex; align-items: center; gap: 10px; margin-bottom: 7px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.funnel-lbl { font-size: 12px; color: var(--gray-800); width: 150px; flex-shrink: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.funnel-bar { height: 24px; border-radius: 1px; display: flex; align-items: center; padding-left: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.funnel-bar span { font-family: 'Work Sans', sans-serif; font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 500; color: var(--white); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Footprint (Story 5) */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footprint-note { font-size: 12px; color: var(--gray-800); line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 14px 18px; border-top: 1px solid var(--gray-200); background: var(--gray-100); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footprint-note strong { font-weight: 600; color: var(--gray-900); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fp-counts { display: flex; gap: 20px; margin: 10px 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fp-count { text-align: center; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fp-num { font-family: 'Oswald', sans-serif; font-size: 26px; font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--maroon-primary); display: block; line-height: 1; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fp-lbl { font-size: 10px; font-weight: 600; text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 0.05em; color: var(--gray-500); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fp-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fp-table th { font-family: 'Work Sans', sans-serif; font-size: 9px; font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase; letter-spacing: 0.06em; color: var(--gray-500);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 4px 8px; text-align: left; border-bottom: 1px solid var(--gray-300); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fp-table td { padding: 5px 8px; border-bottom: 1px solid var(--gray-200);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--gray-800); vertical-align: middle; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fp-table tr:last-child td { border-bottom: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dot-green { display: inline-block; width: 7px; height: 7px; border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--green-pos); margin-right: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dot-gray<span class="Apple-converted-space">  </span>{ display: inline-block; width: 7px; height: 7px; border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--gray-300); margin-right: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.platform-badge { font-size: 9px; background: var(--gray-200); color: var(--gray-700);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 1px 6px; border-radius: 2px; white-space: nowrap; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Source tag */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.src { padding: 8px 18px; background: var(--gray-100); border-top: 1px solid var(--gray-200);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--gray-500); display: flex; gap: 6px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.src span { background: var(--gray-200); border-radius: 2px; padding: 1px 7px; color: var(--gray-700); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Context strip */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.context { background: var(--white); border: 1px solid var(--gray-300);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-top: 3px solid var(--maroon-primary); border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 16px 18px; margin-top: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.context-title { font-family: 'Oswald', sans-serif; font-size: 14px; font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase; letter-spacing: 0.05em; color: var(--maroon-primary); margin-bottom: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.context-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.context-item { font-size: 12px; color: var(--gray-800); line-height: 1.55;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-left: 10px; border-left: 2px solid var(--maroon-primary); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.context-item strong { font-weight: 600; color: var(--gray-900); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 500px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.two-col { grid-template-columns: 1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.stat { min-width: 90px; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.fp-counts { flex-wrap: wrap; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="loading" id="loading"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Loading report&amp;hellip;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Fetching the latest data&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="report"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="masthead"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="masthead-eyebrow"&gt;Texas A&amp;amp;M University &amp;middot; College of Arts &amp;amp; Sciences&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Your websites are working&lt;br&gt;harder than ever&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="masthead-sub"&gt;A plain-English look at how the CAS web team grows enrollment, protects reputation, and keeps the College visible — everywhere.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="masthead-date" id="reportDate"&gt;Loading&amp;hellip;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="ai-banner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="ai-badge"&gt;On AI&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="ai-text"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;strong&gt;AI makes our web work more important, not less.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>When someone asks ChatGPT or Perplexity about a CAS department, degree program, or researcher — the answer comes from our websites. If those pages are broken, outdated, or inaccessible, AI spreads that misinformation to prospective students and collaborators. We make sure AI gets the right story about the College of Arts &amp;amp; Sciences.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Story 1: Reach --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card-head"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-num"&gt;Story 1 of 5 &amp;mdash; Reach&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-hed"&gt;More people are finding&lt;br&gt;the College of Arts &amp;amp; Sciences online&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-lede"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>In the last 90 days, &lt;strong id="s1-sessions-inline"&gt;—&lt;/strong&gt; people visited CAS websites.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>More than half arrived through Google searches — meaning our work put the College in front of</p>
+<p class="p1"><span class="Apple-converted-space">        </span>prospective students, researchers, and partners &lt;em&gt;before they ever contacted us.&lt;/em&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="stats"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s1-sessions"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;Visitors&lt;/div&gt;&lt;div class="stat-c"&gt;Last 90 days&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s1-newusers"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;New visitors&lt;/div&gt;&lt;div class="stat-c"&gt;First time on site&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s1-engage"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;Engagement rate&lt;/div&gt;&lt;div class="stat-c"&gt;Actively reading&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s1-duration"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;Avg. time on site&lt;/div&gt;&lt;div class="stat-c"&gt;Per visit&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="two-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="chart"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="chart-lbl"&gt;Monthly visitors — 6-month trend&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sparks" id="sparkline"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="chart"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="chart-lbl"&gt;Top pages this period&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pages" id="topPages"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="chart"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="chart-lbl"&gt;Traffic by department&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="dept-grid" id="deptBreakdown"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="src"&gt;Data from: &lt;span&gt;Google Analytics 4&lt;/span&gt;&lt;span&gt;artsci.tamu.edu&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Story 2: Quality --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card-head"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-num"&gt;Story 2 of 5 &amp;mdash; Quality&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-hed"&gt;Our sites are getting&lt;br&gt;cleaner every month&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-lede"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>A broken link or an inaccessible page doesn't just frustrate visitors —</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;strong&gt;it tells Google and AI tools that the College's information can't be trusted.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Every issue we fix improves how the world sees CAS online.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="stats"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s2-access"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;Accessibility score&lt;/div&gt;&lt;div class="stat-c"&gt;Legal compliance + inclusivity&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s2-seo"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;SEO score&lt;/div&gt;&lt;div class="stat-c"&gt;Easier to find on Google&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s2-broken"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;Broken links&lt;/div&gt;&lt;div class="stat-c"&gt;Actively being resolved&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s2-issues"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;Quality issues&lt;/div&gt;&lt;div class="stat-c"&gt;Tracked &amp;amp; in progress&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="chart"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="score-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="score-name"&gt;Accessibility&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="score-track"&gt;&lt;div class="score-fill" id="s2-access-bar" style="width:0%"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="score-val" id="s2-access-val"&gt;—&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="score-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="score-name"&gt;SEO&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="score-track"&gt;&lt;div class="score-fill" id="s2-seo-bar" style="width:0%"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="score-val" id="s2-seo-val"&gt;—&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="src"&gt;Data from: &lt;span&gt;Siteimprove&lt;/span&gt;&lt;span&gt;Cascade sites only&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Story 3: Enrollment --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card-head"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-num"&gt;Story 3 of 5 &amp;mdash; Enrollment&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-hed"&gt;The website is the first step&lt;br&gt;in every student's path to CAS&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-lede"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Before a student applies to any CAS department, before they visit campus, before they speak to an advisor —</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;strong&gt;they visit the website.&lt;/strong&gt; This period,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;strong id="s3-newusers-inline"&gt;—&lt;/strong&gt; first-time visitors started that journey on our pages.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="chart"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="funnel-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="funnel-lbl"&gt;Visited CAS sites&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="flex:1"&gt;&lt;div class="funnel-bar" style="width:100%;background:var(--maroon-primary)"&gt;&lt;span id="f1"&gt;—&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="funnel-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="funnel-lbl" style="padding-left:12px;color:var(--gray-500)"&gt;↳ First-time visitors&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="flex:1"&gt;&lt;div class="funnel-bar" style="width:66%;background:var(--maroon-mid)"&gt;&lt;span id="f2"&gt;—&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="funnel-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="funnel-lbl" style="padding-left:12px;color:var(--gray-500)"&gt;↳ Engaged (2+ min)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="flex:1"&gt;&lt;div class="funnel-bar" style="width:42%;background:var(--maroon-light)"&gt;&lt;span&gt;Actively exploring&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="funnel-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="funnel-lbl" style="padding-left:12px;color:var(--gray-500)"&gt;↳ Prospective pages&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="flex:1"&gt;&lt;div class="funnel-bar" style="width:24%;background:var(--maroon-pale)"&gt;&lt;span id="f4" style="color:var(--maroon-primary)"&gt;—&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="stats"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s3-admissions"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;Prospective pages visited&lt;/div&gt;&lt;div class="stat-c"&gt;Admissions &amp;amp; apply paths&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n"&gt;$0&lt;/div&gt;&lt;div class="stat-l"&gt;Paid ad spend&lt;/div&gt;&lt;div class="stat-c"&gt;All organic reach&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="src"&gt;Data from: &lt;span&gt;Google Analytics 4&lt;/span&gt;&lt;span&gt;artsci.tamu.edu&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Story 4: Efficiency --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card-head"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-num"&gt;Story 4 of 5 &amp;mdash; Efficiency&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-hed"&gt;Better content means&lt;br&gt;fewer support calls&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-lede"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>When web content is clear and easy to find, people don't need to call or email for help.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;strong&gt;Every drop in support tickets is direct evidence that content improvements are working.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>That's time saved for staff across the College.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="stats"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s4-tickets"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;Support tickets&lt;/div&gt;&lt;div class="stat-c"&gt;Last 90 days&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s4-response"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;Avg. response time&lt;/div&gt;&lt;div class="stat-c"&gt;When people need help&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s4-csat"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;Satisfaction score&lt;/div&gt;&lt;div class="stat-c"&gt;From support surveys&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="stat-n" id="s4-resolution"&gt;—&lt;/div&gt;&lt;div class="stat-l"&gt;Resolution rate&lt;/div&gt;&lt;div class="stat-c"&gt;Issues fully resolved&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="src"&gt;Data from: &lt;span&gt;Freshdesk&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Story 5: Digital Footprint --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card-head"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-num"&gt;Story 5 of 5 &amp;mdash; Digital Footprint&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-hed"&gt;The College's full&lt;br&gt;web presence&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="story-lede"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Beyond the sites we directly manage, the College has a broad network of Centers &amp;amp; Institute websites</p>
+<p class="p1"><span class="Apple-converted-space">        </span>maintained by their own teams. These sites represent CAS research and reputation online.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;strong&gt;We track what we can, and we're aware of the full picture.&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="footprint-note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="fp-counts"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="fp-count"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="fp-num" id="fp-total"&gt;49&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="fp-lbl"&gt;Total web properties&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="fp-count"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="fp-num" id="fp-monitored"&gt;25&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="fp-lbl"&gt;Fully monitored&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="fp-count"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="fp-num" id="fp-external"&gt;24&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="fp-lbl"&gt;Externally managed&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;The externally managed sites below belong to Centers &amp;amp; Institutes with their own web teams. They use a variety of platforms including WordPress, standalone HTML, and Google Sites. While outside our direct scope, we maintain awareness of their existence and condition.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;table class="fp-table" id="fpTable"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Site&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Platform&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;Monitored&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tbody id="fpBody"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- populated by JS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="src"&gt;Data from: &lt;span&gt;Site inventory&lt;/span&gt;&lt;span&gt;Static list — updated manually&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Why it matters --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="context"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="context-title"&gt;Why this work matters to the College&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="context-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="context-item"&gt;&lt;strong&gt;Brand awareness&lt;/strong&gt; — Every Google search that surfaces a CAS department is a brand impression we didn't pay for.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="context-item"&gt;&lt;strong&gt;Enrollment pipeline&lt;/strong&gt; — The website is the top of the funnel for every prospective student considering any CAS program.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="context-item"&gt;&lt;strong&gt;Reputation&lt;/strong&gt; — Broken, inaccessible, or outdated pages signal that the College doesn't take quality seriously.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="context-item"&gt;&lt;strong&gt;AI visibility&lt;/strong&gt; — ChatGPT, Perplexity, and Google AI pull from our pages. We control what they say about CAS.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;&lt;!-- /report --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>var DATA_URL = 'https://<span class="s1">jnmaldonado21</span>.github.io/cas-web-dashboard/data.json';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.addEventListener('DOMContentLoaded', function() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>fetch(DATA_URL + '?t=' + Date.now())</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.then(function(r) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (!r.ok) throw new Error('HTTP ' + r.status);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return r.json();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>})</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.then(function(data) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>populate(data);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('loading').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setTimeout(function() { document.getElementById('loading').style.display = 'none'; }, 500);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>})</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.catch(function(err) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>console.error('Data load error:', err);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('loading').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setTimeout(function() { document.getElementById('loading').style.display = 'none'; }, 500);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function populate(data) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (data.reportPeriod) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('reportDate', '90-day report · ' + data.reportPeriod.label);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Story 1 — GA4</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (data.ga4) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var g = data.ga4;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s1-sessions-inline', g.sessions.value + ' people');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s1-sessions', g.sessions.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s1-newusers', g.newUsers.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s1-engage', <span class="Apple-converted-space">  </span>g.engagementRate.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s1-duration', g.avgDuration.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s3-newusers-inline', g.newUsers.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('f1', g.sessions.value + ' visits');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('f2', g.newUsers.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('f4', g.admissionsVisits.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s3-admissions', g.admissionsVisits.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>buildSparkline(g.monthlyTrend);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>buildTopPages(g.topPages);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>buildDeptBreakdown(g.deptBreakdown);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Story 2 — Siteimprove</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (data.siteimprove) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var s = data.siteimprove;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s2-access', <span class="Apple-converted-space">    </span>s.accessibilityScore.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s2-seo',<span class="Apple-converted-space">        </span>s.seoScore.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s2-broken', <span class="Apple-converted-space">    </span>s.brokenLinks.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s2-issues', <span class="Apple-converted-space">    </span>s.qualityIssues.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s2-access-val', s.accessibilityScore.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s2-seo-val',<span class="Apple-converted-space">    </span>s.seoScore.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('s2-access-bar').style.width = (s.accessibilityScore.raw || 0) + '%';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('s2-seo-bar').style.width<span class="Apple-converted-space">    </span>= (s.seoScore.raw || 0) + '%';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Story 4 — Freshdesk</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (data.freshdesk) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var f = data.freshdesk;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s4-tickets',<span class="Apple-converted-space">    </span>f.ticketVolume.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s4-response', <span class="Apple-converted-space">  </span>f.avgResponseTime.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s4-csat', <span class="Apple-converted-space">      </span>f.csatScore.value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>set('s4-resolution', f.resolutionRate.value);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Story 5 — Centers inventory</p>
+<p class="p1"><span class="Apple-converted-space">    </span>buildFootprintTable(data.centersInventory);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function buildSparkline(trend) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var el = document.getElementById('sparkline');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (!trend || !trend.values) return;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var max = Math.max.apply(null, trend.values) || 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var shades = ['#d1a0a0','#c07070','#a85050','#8c3535','#6b1f1f','#500000'];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>el.innerHTML = trend.values.map(function(v, i) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var pct = Math.max(8, Math.round((v / max) * 100));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return '&lt;div class="spark-col"&gt;' +</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'&lt;div class="spark-bar" style="height:' + pct + '%;background:' + shades[Math.min(i, 5)] + '"&gt;&lt;/div&gt;' +</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'&lt;div class="spark-mo"&gt;' + (trend.labels[i] || '') + '&lt;/div&gt;&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}).join('');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function buildTopPages(pages) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var el = document.getElementById('topPages');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (!pages || !pages.length) return;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var max = pages[0].views || 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>el.innerHTML = pages.map(function(p) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var pct = Math.round((p.views / max) * 100);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var lbl = p.path.length &gt; 16 ? p.path.substring(0, 15) + '\u2026' : p.path;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var v <span class="Apple-converted-space">  </span>= p.views &gt;= 1000 ? (p.views / 1000).toFixed(1) + 'k' : p.views;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return '&lt;div class="page-row"&gt;' +</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'&lt;div class="page-path" title="' + p.path + '"&gt;' + lbl + '&lt;/div&gt;' +</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'&lt;div class="page-track"&gt;&lt;div class="page-fill" style="width:' + pct + '%"&gt;&lt;/div&gt;&lt;/div&gt;' +</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'&lt;div class="page-views"&gt;' + v + '&lt;/div&gt;&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}).join('');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function buildDeptBreakdown(depts) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var el = document.getElementById('deptBreakdown');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (!depts || !depts.length) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>el.innerHTML = '&lt;div style="font-size:12px;color:var(--gray-500);grid-column:1/-1"&gt;Department breakdown not available — check GA4 property configuration.&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var max = depts[0].sessions || 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>el.innerHTML = depts.slice(0, 18).map(function(d) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var pct = Math.round((d.sessions / max) * 100);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var v <span class="Apple-converted-space">  </span>= d.sessions &gt;= 1000 ? (d.sessions / 1000).toFixed(1) + 'k' : d.sessions;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return '&lt;div class="dept-item"&gt;' +</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'&lt;div class="dept-name" title="' + d.name + '"&gt;' + d.name + '&lt;/div&gt;' +</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'&lt;div class="dept-track"&gt;&lt;div class="dept-fill" style="width:' + pct + '%"&gt;&lt;/div&gt;&lt;/div&gt;' +</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'&lt;div class="dept-val"&gt;' + v + '&lt;/div&gt;&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}).join('');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function buildFootprintTable(inventory) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var el = document.getElementById('fpBody');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (!inventory) return;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var monitored = inventory.filter(function(s) { return s.monitored; }).length;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var external<span class="Apple-converted-space">  </span>= inventory.filter(function(s) { return !s.monitored; }).length;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>set('fp-monitored', String(monitored + 19)); // 19 cascade dept sites + monitored centers</p>
+<p class="p1"><span class="Apple-converted-space">    </span>set('fp-external',<span class="Apple-converted-space">  </span>String(external));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>set('fp-total', <span class="Apple-converted-space">    </span>String(monitored + external + 19));</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>el.innerHTML = inventory.map(function(s) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var dot = s.monitored</p>
+<p class="p1"><span class="Apple-converted-space">        </span>? '&lt;span class="dot-green"&gt;&lt;/span&gt;In scope'</p>
+<p class="p1"><span class="Apple-converted-space">        </span>: '&lt;span class="dot-gray"&gt;&lt;/span&gt;External';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return '&lt;tr&gt;' +</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'&lt;td&gt;&lt;a href="' + s.url + '" target="_blank" rel="noopener" style="color:var(--maroon-primary);text-decoration:none"&gt;' + s.name + '&lt;/a&gt;&lt;/td&gt;' +</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'&lt;td&gt;&lt;span class="platform-badge"&gt;' + s.platform + '&lt;/span&gt;&lt;/td&gt;' +</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'&lt;td&gt;' + dot + '&lt;/td&gt;&lt;/tr&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}).join('');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function set(id, val) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var el = document.getElementById(id);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (el) el.textContent = val;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
