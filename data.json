@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-05-13T19:54:36.480Z",
+  "lastUpdated": "2026-05-13T20:01:14.947Z",
   "reportPeriod": {
     "days": 90,
     "startDate": "2026-02-12",
     "endDate": "2026-05-13",
-    "startISO": "2026-02-12T20:54:30.047Z",
-    "endISO": "2026-05-13T19:54:30.047Z",
+    "startISO": "2026-02-12T21:01:05.995Z",
+    "endISO": "2026-05-13T20:01:05.995Z",
     "label": "Feb 12, 2026 ? May 13, 2026"
   },
   "college": "College of Arts & Sciences",
@@ -16,8 +16,8 @@
       "raw": 831890
     },
     "newUsers": {
-      "value": "564.1k",
-      "raw": 564108
+      "value": "564.2k",
+      "raw": 564152
     },
     "engagementRate": {
       "value": "35%",
@@ -28,8 +28,8 @@
       "raw": 168
     },
     "pageViews": {
-      "value": "1280.8k",
-      "raw": 1280812
+      "value": "1280.9k",
+      "raw": 1280887
     },
     "bounceRate": {
       "value": "65%",
@@ -58,7 +58,7 @@
       },
       {
         "path": "/english/index.html",
-        "views": 19244
+        "views": 19245
       }
     ],
     "monthlyTrend": {
@@ -90,7 +90,7 @@
         },
         {
           "sessions": 104240,
-          "newUsers": 70060,
+          "newUsers": 70079,
           "bounceRate": 62
         }
       ],
@@ -107,8 +107,8 @@
       {
         "name": "Mathematics",
         "path": "/mathematics/",
-        "sessions": 83317,
-        "newUsers": 25079,
+        "sessions": 83318,
+        "newUsers": 25080,
         "avgDuration": 136,
         "bounceRate": 31
       },
@@ -123,16 +123,16 @@
       {
         "name": "Chemistry",
         "path": "/chemistry/",
-        "sessions": 61161,
-        "newUsers": 21603,
+        "sessions": 61165,
+        "newUsers": 21605,
         "avgDuration": 150,
         "bounceRate": 33
       },
       {
         "name": "Psychological & Brain Sciences",
         "path": "/psychological-brain-sciences/",
-        "sessions": 59203,
-        "newUsers": 20555,
+        "sessions": 59204,
+        "newUsers": 20556,
         "avgDuration": 239,
         "bounceRate": 27
       },
@@ -164,7 +164,7 @@
         "name": "English",
         "path": "/english/",
         "sessions": 29102,
-        "newUsers": 20049,
+        "newUsers": 20050,
         "avgDuration": 141,
         "bounceRate": 32
       },
@@ -274,7 +274,7 @@
         "Chemistry": [
           23031,
           19557,
-          18231
+          18236
         ],
         "Communication & Journalism": [
           5656,
@@ -289,7 +289,7 @@
         "English": [
           12487,
           11842,
-          4727
+          4728
         ],
         "Geography": [
           9700,
@@ -314,7 +314,7 @@
         "Mathematics": [
           22316,
           31671,
-          28069
+          28072
         ],
         "Oceanography": [
           6504,
@@ -334,7 +334,7 @@
         "Psychological & Brain Sciences": [
           17910,
           23632,
-          16636
+          16637
         ],
         "Sociology": [
           9279,
@@ -454,7 +454,7 @@
       },
       {
         "label": "Mar 11",
-        "count": 10
+        "count": 11
       },
       {
         "label": "Mar 18",
@@ -462,7 +462,7 @@
       },
       {
         "label": "Mar 25",
-        "count": 28
+        "count": 27
       },
       {
         "label": "Apr 1",
@@ -496,11 +496,11 @@
   },
   "clarity": {
     "status": "active",
-    "hasData": false,
+    "hasData": true,
     "dataWindow": "Last 3 days (API limit)",
     "totalSessions": {
-      "value": "0",
-      "raw": 0
+      "value": "1.9k",
+      "raw": 1884
     },
     "uniqueUsers": {
       "value": "?",
@@ -511,12 +511,12 @@
       "raw": 0
     },
     "deadClicks": {
-      "value": "0",
-      "raw": 0
+      "value": "673",
+      "raw": 673
     },
     "deadClickRate": {
-      "value": "0%",
-      "raw": 0
+      "value": "36%",
+      "raw": 36
     },
     "rageClicks": {
       "value": "?",
@@ -527,565 +527,37 @@
       "raw": 0
     },
     "pageViews": {
-      "value": "0",
-      "raw": 0
+      "value": "279",
+      "raw": 279
     },
     "topPages": [],
     "rawData": [
       {
-        "metricName": "DeadClickCount",
-        "information": [
-          {
-            "sessionsCount": "2",
-            "sessionsWithMetricPercentage": 100,
-            "sessionsWithoutMetricPercentage": 0,
-            "pagesViews": "2",
-            "subTotal": "5",
-            "Browser": "Other",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "118",
-            "sessionsWithMetricPercentage": 3.39,
-            "sessionsWithoutMetricPercentage": 96.61,
-            "pagesViews": "5",
-            "subTotal": "9",
-            "Browser": "ChromeMobile",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "4",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "EdgeMobile",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "2",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Firefox",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "2",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "FirefoxMobile",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "375",
-            "sessionsWithMetricPercentage": 7.47,
-            "sessionsWithoutMetricPercentage": 92.53,
-            "pagesViews": "29",
-            "subTotal": "66",
-            "Browser": "MobileSafari",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "6",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "SamsungInternet",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "18",
-            "sessionsWithMetricPercentage": 11.11,
-            "sessionsWithoutMetricPercentage": 88.89,
-            "pagesViews": "2",
-            "subTotal": "2",
-            "Browser": "InstagramApp",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "15",
-            "sessionsWithMetricPercentage": 6.67,
-            "sessionsWithoutMetricPercentage": 93.33,
-            "pagesViews": "1",
-            "subTotal": "1",
-            "Browser": "FacebookApp",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "30",
-            "sessionsWithMetricPercentage": 6.67,
-            "sessionsWithoutMetricPercentage": 93.33,
-            "pagesViews": "2",
-            "subTotal": "3",
-            "Browser": "GoogleApp",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "4",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "ChromeMobile",
-            "Device": "Tablet"
-          },
-          {
-            "sessionsCount": "31",
-            "sessionsWithMetricPercentage": 12.9,
-            "sessionsWithoutMetricPercentage": 87.1,
-            "pagesViews": "4",
-            "subTotal": "4",
-            "Browser": "MobileSafari",
-            "Device": "Tablet"
-          },
-          {
-            "sessionsCount": "1",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "FacebookApp",
-            "Device": "Tablet"
-          },
-          {
-            "sessionsCount": "1",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Other",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "953",
-            "sessionsWithMetricPercentage": 14.69,
-            "sessionsWithoutMetricPercentage": 85.31,
-            "pagesViews": "173",
-            "subTotal": "481",
-            "Browser": "Chrome",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "141",
-            "sessionsWithMetricPercentage": 18.44,
-            "sessionsWithoutMetricPercentage": 81.56,
-            "pagesViews": "28",
-            "subTotal": "44",
-            "Browser": "Edge",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "42",
-            "sessionsWithMetricPercentage": 14.29,
-            "sessionsWithoutMetricPercentage": 85.71000000000001,
-            "pagesViews": "6",
-            "subTotal": "8",
-            "Browser": "Firefox",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "3",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Opera",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "127",
-            "sessionsWithMetricPercentage": 15.75,
-            "sessionsWithoutMetricPercentage": 84.25,
-            "pagesViews": "26",
-            "subTotal": "49",
-            "Browser": "Safari",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "3",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Other",
-            "Device": "Email"
-          }
-        ]
+        "sessionsCount": "2",
+        "sessionsWithMetricPercentage": 100,
+        "sessionsWithoutMetricPercentage": 0,
+        "pagesViews": "2",
+        "subTotal": "5",
+        "Browser": "Other",
+        "Device": "Mobile"
       },
       {
-        "metricName": "ExcessiveScroll",
-        "information": [
-          {
-            "sessionsCount": "2",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Other",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "118",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "ChromeMobile",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "4",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "EdgeMobile",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "2",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Firefox",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "2",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "FirefoxMobile",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "375",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "MobileSafari",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "6",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "SamsungInternet",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "18",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "InstagramApp",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "15",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "FacebookApp",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "30",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "GoogleApp",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "4",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "ChromeMobile",
-            "Device": "Tablet"
-          },
-          {
-            "sessionsCount": "31",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "MobileSafari",
-            "Device": "Tablet"
-          },
-          {
-            "sessionsCount": "1",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "FacebookApp",
-            "Device": "Tablet"
-          },
-          {
-            "sessionsCount": "1",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Other",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "953",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Chrome",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "141",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Edge",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "42",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Firefox",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "3",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Opera",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "127",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Safari",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "3",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Other",
-            "Device": "Email"
-          }
-        ]
+        "sessionsCount": "118",
+        "sessionsWithMetricPercentage": 3.39,
+        "sessionsWithoutMetricPercentage": 96.61,
+        "pagesViews": "5",
+        "subTotal": "9",
+        "Browser": "ChromeMobile",
+        "Device": "Mobile"
       },
       {
-        "metricName": "RageClickCount",
-        "information": [
-          {
-            "sessionsCount": "2",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Other",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "118",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "ChromeMobile",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "4",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "EdgeMobile",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "2",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Firefox",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "2",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "FirefoxMobile",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "375",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "MobileSafari",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "6",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "SamsungInternet",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "18",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "InstagramApp",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "15",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "FacebookApp",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "30",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "GoogleApp",
-            "Device": "Mobile"
-          },
-          {
-            "sessionsCount": "4",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "ChromeMobile",
-            "Device": "Tablet"
-          },
-          {
-            "sessionsCount": "31",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "MobileSafari",
-            "Device": "Tablet"
-          },
-          {
-            "sessionsCount": "1",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "FacebookApp",
-            "Device": "Tablet"
-          },
-          {
-            "sessionsCount": "1",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Other",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "953",
-            "sessionsWithMetricPercentage": 0.42,
-            "sessionsWithoutMetricPercentage": 99.58,
-            "pagesViews": "4",
-            "subTotal": "15",
-            "Browser": "Chrome",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "141",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Edge",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "42",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Firefox",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "3",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Opera",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "127",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Safari",
-            "Device": "PC"
-          },
-          {
-            "sessionsCount": "3",
-            "sessionsWithMetricPercentage": 0,
-            "sessionsWithoutMetricPercentage": 100,
-            "pagesViews": "0",
-            "subTotal": "0",
-            "Browser": "Other",
-            "Device": "Email"
-          }
-        ]
+        "sessionsCount": "4",
+        "sessionsWithMetricPercentage": 0,
+        "sessionsWithoutMetricPercentage": 100,
+        "pagesViews": "0",
+        "subTotal": "0",
+        "Browser": "EdgeMobile",
+        "Device": "Mobile"
       }
     ]
   },
