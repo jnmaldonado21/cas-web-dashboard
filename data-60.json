@@ -1,0 +1,1243 @@
+{
+  "lastUpdated": "2026-05-13T19:54:28.907Z",
+  "reportPeriod": {
+    "days": 60,
+    "startDate": "2026-03-14",
+    "endDate": "2026-05-13",
+    "startISO": "2026-03-14T19:54:22.010Z",
+    "endISO": "2026-05-13T19:54:22.010Z",
+    "label": "Mar 14, 2026 ? May 13, 2026"
+  },
+  "college": "College of Arts & Sciences",
+  "domain": "artsci.tamu.edu",
+  "ga4": {
+    "sessions": {
+      "value": "501.0k",
+      "raw": 500953
+    },
+    "newUsers": {
+      "value": "309.8k",
+      "raw": 309767
+    },
+    "engagementRate": {
+      "value": "40%",
+      "raw": 40
+    },
+    "avgDuration": {
+      "value": "3:13",
+      "raw": 193
+    },
+    "pageViews": {
+      "value": "799.3k",
+      "raw": 799330
+    },
+    "bounceRate": {
+      "value": "60%",
+      "raw": 60
+    },
+    "admissionsVisits": {
+      "value": "1.4k",
+      "raw": 1363
+    },
+    "topPages": [
+      {
+        "path": "/",
+        "views": 16435
+      },
+      {
+        "path": "/english/index.html",
+        "views": 10054
+      },
+      {
+        "path": "/geology-geophysics/index.html",
+        "views": 9891
+      },
+      {
+        "path": "/mathematics/index.html",
+        "views": 9060
+      },
+      {
+        "path": "/mathematics/academics/courses/common-exams/math152.html",
+        "views": 8606
+      }
+    ],
+    "monthlyTrend": {
+      "buckets": [
+        {
+          "sessions": 115550,
+          "newUsers": 77597,
+          "bounceRate": 67
+        },
+        {
+          "sessions": 84905,
+          "newUsers": 45160,
+          "bounceRate": 54
+        },
+        {
+          "sessions": 74847,
+          "newUsers": 42742,
+          "bounceRate": 56
+        },
+        {
+          "sessions": 80162,
+          "newUsers": 45803,
+          "bounceRate": 56
+        },
+        {
+          "sessions": 73618,
+          "newUsers": 47719,
+          "bounceRate": 63
+        },
+        {
+          "sessions": 66737,
+          "newUsers": 44024,
+          "bounceRate": 61
+        }
+      ],
+      "labels": [
+        "Mar",
+        "Apr",
+        "Apr",
+        "Apr",
+        "May",
+        "May"
+      ]
+    },
+    "deptBreakdown": [
+      {
+        "name": "Mathematics",
+        "path": "/mathematics/",
+        "sessions": 60517,
+        "newUsers": 17828,
+        "avgDuration": 132,
+        "bounceRate": 30
+      },
+      {
+        "name": "Psychological & Brain Sciences",
+        "path": "/psychological-brain-sciences/",
+        "sessions": 40321,
+        "newUsers": 12984,
+        "avgDuration": 260,
+        "bounceRate": 27
+      },
+      {
+        "name": "Biology",
+        "path": "/biology/",
+        "sessions": 38684,
+        "newUsers": 9924,
+        "avgDuration": 183,
+        "bounceRate": 28
+      },
+      {
+        "name": "Chemistry",
+        "path": "/chemistry/",
+        "sessions": 37511,
+        "newUsers": 11953,
+        "avgDuration": 154,
+        "bounceRate": 32
+      },
+      {
+        "name": "Economics",
+        "path": "/economics/",
+        "sessions": 18649,
+        "newUsers": 6782,
+        "avgDuration": 193,
+        "bounceRate": 25
+      },
+      {
+        "name": "Geology & Geophysics",
+        "path": "/geology-geophysics/",
+        "sessions": 18106,
+        "newUsers": 12429,
+        "avgDuration": 147,
+        "bounceRate": 36
+      },
+      {
+        "name": "English",
+        "path": "/english/",
+        "sessions": 17177,
+        "newUsers": 10382,
+        "avgDuration": 150,
+        "bounceRate": 32
+      },
+      {
+        "name": "Statistics",
+        "path": "/statistics/",
+        "sessions": 14069,
+        "newUsers": 5453,
+        "avgDuration": 173,
+        "bounceRate": 25
+      },
+      {
+        "name": "Physics & Astronomy",
+        "path": "/physics-astronomy/",
+        "sessions": 13710,
+        "newUsers": 5823,
+        "avgDuration": 227,
+        "bounceRate": 32
+      },
+      {
+        "name": "Communication & Journalism",
+        "path": "/comm-journalism/",
+        "sessions": 12789,
+        "newUsers": 4542,
+        "avgDuration": 117,
+        "bounceRate": 28
+      },
+      {
+        "name": "Geography",
+        "path": "/geography/",
+        "sessions": 10947,
+        "newUsers": 6951,
+        "avgDuration": 172,
+        "bounceRate": 33
+      },
+      {
+        "name": "Sociology",
+        "path": "/sociology/",
+        "sessions": 10878,
+        "newUsers": 7271,
+        "avgDuration": 170,
+        "bounceRate": 36
+      },
+      {
+        "name": "Atmospheric Sciences",
+        "path": "/atmos-science/",
+        "sessions": 9645,
+        "newUsers": 6188,
+        "avgDuration": 213,
+        "bounceRate": 37
+      },
+      {
+        "name": "Philosophy",
+        "path": "/philosophy/",
+        "sessions": 9504,
+        "newUsers": 5217,
+        "avgDuration": 123,
+        "bounceRate": 34
+      },
+      {
+        "name": "Global Languages & Cultures",
+        "path": "/global-lang-cultures/",
+        "sessions": 8558,
+        "newUsers": 3141,
+        "avgDuration": 215,
+        "bounceRate": 22
+      },
+      {
+        "name": "History",
+        "path": "/history/",
+        "sessions": 8308,
+        "newUsers": 4757,
+        "avgDuration": 199,
+        "bounceRate": 28
+      },
+      {
+        "name": "Oceanography",
+        "path": "/oceanography/",
+        "sessions": 7909,
+        "newUsers": 6034,
+        "avgDuration": 108,
+        "bounceRate": 43
+      },
+      {
+        "name": "Anthropology",
+        "path": "/anthropology/",
+        "sessions": 4273,
+        "newUsers": 3131,
+        "avgDuration": 79,
+        "bounceRate": 45
+      }
+    ],
+    "deptTrend": {
+      "labels": [
+        "Apr",
+        "May"
+      ],
+      "departments": {
+        "Anthropology": [
+          2642,
+          1663
+        ],
+        "Atmospheric Sciences": [
+          4624,
+          4648
+        ],
+        "Biology": [
+          22608,
+          16336
+        ],
+        "Chemistry": [
+          19557,
+          18229
+        ],
+        "Communication & Journalism": [
+          7752,
+          5155
+        ],
+        "Economics": [
+          11268,
+          8326
+        ],
+        "English": [
+          11842,
+          4727
+        ],
+        "Geography": [
+          6296,
+          4152
+        ],
+        "Geology & Geophysics": [
+          11449,
+          5492
+        ],
+        "Global Languages & Cultures": [
+          5481,
+          3160
+        ],
+        "History": [
+          4927,
+          3956
+        ],
+        "Mathematics": [
+          31671,
+          28065
+        ],
+        "Oceanography": [
+          4770,
+          2897
+        ],
+        "Philosophy": [
+          5676,
+          3251
+        ],
+        "Physics & Astronomy": [
+          7915,
+          6046
+        ],
+        "Psychological & Brain Sciences": [
+          23632,
+          16634
+        ],
+        "Sociology": [
+          7319,
+          3126
+        ],
+        "Statistics": [
+          7900,
+          6363
+        ]
+      }
+    }
+  },
+  "siteimprove": {
+    "scope": "artsci.tamu.edu (Cascade sites)",
+    "accessibilityScore": {
+      "value": "83",
+      "raw": 83
+    },
+    "accessibilityAA": {
+      "value": "83",
+      "raw": 83
+    },
+    "accessibilityTotal": {
+      "value": "89",
+      "raw": 89
+    },
+    "seoScore": {
+      "value": "84",
+      "raw": 84
+    },
+    "qaScore": {
+      "value": "63",
+      "raw": 63
+    },
+    "dciTotal": {
+      "value": "79",
+      "raw": 79
+    },
+    "brokenLinks": {
+      "value": "1328",
+      "raw": 1328
+    },
+    "qualityIssues": {
+      "value": "141",
+      "raw": 141
+    }
+  },
+  "freshdesk": {
+    "ticketVolume": {
+      "value": "208",
+      "raw": 208
+    },
+    "resolutionRate": {
+      "value": "85%",
+      "raw": 85
+    },
+    "avgResponseTime": {
+      "value": "6.0h",
+      "raw": "6.0"
+    },
+    "csatScore": {
+      "value": "N/A",
+      "raw": "N/A"
+    },
+    "deptBreakdown": [
+      {
+        "name": "Other / Unclassified",
+        "count": 134
+      },
+      {
+        "name": "History",
+        "count": 27
+      },
+      {
+        "name": "Geology & Geophysics",
+        "count": 10
+      },
+      {
+        "name": "Chemistry",
+        "count": 7
+      },
+      {
+        "name": "Geography",
+        "count": 6
+      },
+      {
+        "name": "Biology",
+        "count": 5
+      },
+      {
+        "name": "Communication & Journalism",
+        "count": 3
+      },
+      {
+        "name": "English",
+        "count": 3
+      },
+      {
+        "name": "Physics & Astronomy",
+        "count": 3
+      },
+      {
+        "name": "Economics",
+        "count": 2
+      }
+    ],
+    "ticketTrend": [
+      {
+        "label": "Mar 18",
+        "count": 19
+      },
+      {
+        "label": "Mar 25",
+        "count": 28
+      },
+      {
+        "label": "Apr 1",
+        "count": 19
+      },
+      {
+        "label": "Apr 8",
+        "count": 11
+      },
+      {
+        "label": "Apr 15",
+        "count": 15
+      },
+      {
+        "label": "Apr 22",
+        "count": 26
+      },
+      {
+        "label": "Apr 29",
+        "count": 22
+      },
+      {
+        "label": "May 6",
+        "count": 24
+      },
+      {
+        "label": "May 13",
+        "count": 37
+      }
+    ]
+  },
+  "clarity": {
+    "status": "active",
+    "hasData": false,
+    "dataWindow": "Last 3 days (API limit)",
+    "totalSessions": {
+      "value": "0",
+      "raw": 0
+    },
+    "uniqueUsers": {
+      "value": "?",
+      "raw": 0
+    },
+    "scrollDepth": {
+      "value": "?",
+      "raw": 0
+    },
+    "deadClicks": {
+      "value": "0",
+      "raw": 0
+    },
+    "deadClickRate": {
+      "value": "0%",
+      "raw": 0
+    },
+    "rageClicks": {
+      "value": "?",
+      "raw": 0
+    },
+    "recordings": {
+      "value": "?",
+      "raw": 0
+    },
+    "pageViews": {
+      "value": "0",
+      "raw": 0
+    },
+    "topPages": [],
+    "rawData": [
+      {
+        "metricName": "DeadClickCount",
+        "information": [
+          {
+            "sessionsCount": "2",
+            "sessionsWithMetricPercentage": 100,
+            "sessionsWithoutMetricPercentage": 0,
+            "pagesViews": "2",
+            "subTotal": "5",
+            "Browser": "Other",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "118",
+            "sessionsWithMetricPercentage": 3.39,
+            "sessionsWithoutMetricPercentage": 96.61,
+            "pagesViews": "5",
+            "subTotal": "9",
+            "Browser": "ChromeMobile",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "4",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "EdgeMobile",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "2",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Firefox",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "2",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "FirefoxMobile",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "375",
+            "sessionsWithMetricPercentage": 7.47,
+            "sessionsWithoutMetricPercentage": 92.53,
+            "pagesViews": "29",
+            "subTotal": "66",
+            "Browser": "MobileSafari",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "6",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "SamsungInternet",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "18",
+            "sessionsWithMetricPercentage": 11.11,
+            "sessionsWithoutMetricPercentage": 88.89,
+            "pagesViews": "2",
+            "subTotal": "2",
+            "Browser": "InstagramApp",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "15",
+            "sessionsWithMetricPercentage": 6.67,
+            "sessionsWithoutMetricPercentage": 93.33,
+            "pagesViews": "1",
+            "subTotal": "1",
+            "Browser": "FacebookApp",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "30",
+            "sessionsWithMetricPercentage": 6.67,
+            "sessionsWithoutMetricPercentage": 93.33,
+            "pagesViews": "2",
+            "subTotal": "3",
+            "Browser": "GoogleApp",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "4",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "ChromeMobile",
+            "Device": "Tablet"
+          },
+          {
+            "sessionsCount": "31",
+            "sessionsWithMetricPercentage": 12.9,
+            "sessionsWithoutMetricPercentage": 87.1,
+            "pagesViews": "4",
+            "subTotal": "4",
+            "Browser": "MobileSafari",
+            "Device": "Tablet"
+          },
+          {
+            "sessionsCount": "1",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "FacebookApp",
+            "Device": "Tablet"
+          },
+          {
+            "sessionsCount": "1",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Other",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "953",
+            "sessionsWithMetricPercentage": 14.69,
+            "sessionsWithoutMetricPercentage": 85.31,
+            "pagesViews": "173",
+            "subTotal": "481",
+            "Browser": "Chrome",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "141",
+            "sessionsWithMetricPercentage": 18.44,
+            "sessionsWithoutMetricPercentage": 81.56,
+            "pagesViews": "28",
+            "subTotal": "44",
+            "Browser": "Edge",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "42",
+            "sessionsWithMetricPercentage": 14.29,
+            "sessionsWithoutMetricPercentage": 85.71000000000001,
+            "pagesViews": "6",
+            "subTotal": "8",
+            "Browser": "Firefox",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "3",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Opera",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "127",
+            "sessionsWithMetricPercentage": 15.75,
+            "sessionsWithoutMetricPercentage": 84.25,
+            "pagesViews": "26",
+            "subTotal": "49",
+            "Browser": "Safari",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "3",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Other",
+            "Device": "Email"
+          }
+        ]
+      },
+      {
+        "metricName": "ExcessiveScroll",
+        "information": [
+          {
+            "sessionsCount": "2",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Other",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "118",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "ChromeMobile",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "4",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "EdgeMobile",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "2",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Firefox",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "2",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "FirefoxMobile",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "375",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "MobileSafari",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "6",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "SamsungInternet",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "18",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "InstagramApp",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "15",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "FacebookApp",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "30",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "GoogleApp",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "4",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "ChromeMobile",
+            "Device": "Tablet"
+          },
+          {
+            "sessionsCount": "31",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "MobileSafari",
+            "Device": "Tablet"
+          },
+          {
+            "sessionsCount": "1",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "FacebookApp",
+            "Device": "Tablet"
+          },
+          {
+            "sessionsCount": "1",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Other",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "953",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Chrome",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "141",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Edge",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "42",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Firefox",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "3",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Opera",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "127",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Safari",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "3",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Other",
+            "Device": "Email"
+          }
+        ]
+      },
+      {
+        "metricName": "RageClickCount",
+        "information": [
+          {
+            "sessionsCount": "2",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Other",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "118",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "ChromeMobile",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "4",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "EdgeMobile",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "2",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Firefox",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "2",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "FirefoxMobile",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "375",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "MobileSafari",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "6",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "SamsungInternet",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "18",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "InstagramApp",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "15",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "FacebookApp",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "30",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "GoogleApp",
+            "Device": "Mobile"
+          },
+          {
+            "sessionsCount": "4",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "ChromeMobile",
+            "Device": "Tablet"
+          },
+          {
+            "sessionsCount": "31",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "MobileSafari",
+            "Device": "Tablet"
+          },
+          {
+            "sessionsCount": "1",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "FacebookApp",
+            "Device": "Tablet"
+          },
+          {
+            "sessionsCount": "1",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Other",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "953",
+            "sessionsWithMetricPercentage": 0.42,
+            "sessionsWithoutMetricPercentage": 99.58,
+            "pagesViews": "4",
+            "subTotal": "15",
+            "Browser": "Chrome",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "141",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Edge",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "42",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Firefox",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "3",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Opera",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "127",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Safari",
+            "Device": "PC"
+          },
+          {
+            "sessionsCount": "3",
+            "sessionsWithMetricPercentage": 0,
+            "sessionsWithoutMetricPercentage": 100,
+            "pagesViews": "0",
+            "subTotal": "0",
+            "Browser": "Other",
+            "Device": "Email"
+          }
+        ]
+      }
+    ]
+  },
+  "centersInventory": [
+    {
+      "name": "Race and Ethnic Studies Institute",
+      "url": "https://liberalarts.tamu.edu/resi/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Glasscock Center for Humanities Research",
+      "url": "https://liberalarts.tamu.edu/glasscock/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Center of Digital Humanities Research",
+      "url": "https://liberalarts.tamu.edu/codhr/",
+      "platform": "WordPress",
+      "monitored": true
+    },
+    {
+      "name": "Center for the Study of First Americans",
+      "url": "https://liberalarts.tamu.edu/csfa/",
+      "platform": "WordPress",
+      "monitored": true
+    },
+    {
+      "name": "Texas Research Data Center",
+      "url": "https://liberalarts.tamu.edu/txrdc/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Berg-Hughes Center",
+      "url": "https://berg-hughes.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    },
+    {
+      "name": "Ctr for Approximation & Mathematical Data",
+      "url": "https://sites.google.com/tamu.edu/camda/",
+      "platform": "Google Sites",
+      "monitored": true
+    },
+    {
+      "name": "Ctr for Atmospheric Chemistry & Environment",
+      "url": "https://cace.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    },
+    {
+      "name": "Center for Biological Clocks Research",
+      "url": "https://clocks.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Ctr for Chemical Characterization & Analysis",
+      "url": "https://sites.google.com/view/elemental-analysis-laboratory/",
+      "platform": "Google Sites",
+      "monitored": true
+    },
+    {
+      "name": "Ctr for Electrochemical Systems & H Research",
+      "url": "http://www.txpec.net/",
+      "platform": "Unknown",
+      "monitored": true
+    },
+    {
+      "name": "Ctr for Maritime Archaeology & Conservation",
+      "url": "https://nautarch.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Ctr for Mathematics and Science Education",
+      "url": "https://cmse.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Center for Statistical Bioinformatics",
+      "url": "https://statbio.stat.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": true
+    },
+    {
+      "name": "Ctr for Surface Science & Mechanochemistry",
+      "url": "https://www.chem.tamu.edu/cmcc/",
+      "platform": "HTML/CSS",
+      "monitored": false
+    },
+    {
+      "name": "Center for Tectonophysics",
+      "url": "https://tectono.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    },
+    {
+      "name": "Center for Theoretical Physics",
+      "url": "https://iqse.tamu.edu/ctp/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Cyclotron Institute",
+      "url": "https://cyclotron.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Geochemical & Environmental Research Group",
+      "url": "https://gerg.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    },
+    {
+      "name": "Mitchell Institute for Physics & Astronomy",
+      "url": "https://mitchell.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Inst. for Applied Math & Computational Science",
+      "url": "https://iamcs.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Institute for Scientific Computation",
+      "url": "https://isc.tamu.edu/",
+      "platform": "HTML/CSS",
+      "monitored": false
+    },
+    {
+      "name": "Institute for Quantum Science and Engineering",
+      "url": "https://iqse.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Institute of Nautical Archaeology",
+      "url": "https://nauticalarch.org/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Laboratory for Synthetic Biologic Interactions",
+      "url": "https://lsbi.chem.tamu.edu/",
+      "platform": "HTML/CSS",
+      "monitored": false
+    },
+    {
+      "name": "Nuclear Solutions Institute",
+      "url": "https://nsi.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Office of the Texas State Climatologist",
+      "url": "https://climatexas.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    },
+    {
+      "name": "Public Policy Research Institute",
+      "url": "https://ppri.tamu.edu/",
+      "platform": "WordPress",
+      "monitored": false
+    },
+    {
+      "name": "Southern Regional Climate Center",
+      "url": "https://www.srcc.tamu.edu/",
+      "platform": "HTML/CSS",
+      "monitored": false
+    },
+    {
+      "name": "Texas Center for Extreme Weather",
+      "url": "https://texasclimate.tamu.edu/",
+      "platform": "Cascade",
+      "monitored": true
+    }
+  ]
+}
