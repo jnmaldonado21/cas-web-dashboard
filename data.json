@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-06-16T12:14:54.186Z",
+  "lastUpdated": "2026-06-17T12:14:54.638Z",
   "reportPeriod": {
     "days": 90,
-    "startDate": "2026-03-18",
-    "endDate": "2026-06-16",
-    "startISO": "2026-03-18T12:14:44.205Z",
-    "endISO": "2026-06-16T12:14:44.205Z",
-    "label": "Mar 18, 2026 ? Jun 16, 2026"
+    "startDate": "2026-03-19",
+    "endDate": "2026-06-17",
+    "startISO": "2026-03-19T12:14:43.645Z",
+    "endISO": "2026-06-17T12:14:43.645Z",
+    "label": "Mar 19, 2026 ? Jun 17, 2026"
   },
   "college": "College of Arts & Sciences",
   "domain": "artsci.tamu.edu",
   "ga4": {
     "sessions": {
-      "value": "690.6k",
-      "raw": 690599
+      "value": "685.0k",
+      "raw": 685003
     },
     "newUsers": {
-      "value": "451.3k",
-      "raw": 451273
+      "value": "446.5k",
+      "raw": 446469
     },
     "engagementRate": {
       "value": "37%",
@@ -28,8 +28,8 @@
       "raw": 183
     },
     "pageViews": {
-      "value": "1101.0k",
-      "raw": 1100992
+      "value": "1092.5k",
+      "raw": 1092550
     },
     "bounceRate": {
       "value": "63%",
@@ -37,60 +37,60 @@
     },
     "admissionsVisits": {
       "value": "2.7k",
-      "raw": 2677
+      "raw": 2686
     },
     "topPages": [
       {
         "path": "/",
-        "views": 26996
-      },
-      {
-        "path": "/english/index.html",
-        "views": 13252
+        "views": 26705
       },
       {
         "path": "/geosonline/index.html",
-        "views": 13095
+        "views": 13311
+      },
+      {
+        "path": "/english/index.html",
+        "views": 12826
       },
       {
         "path": "/mathematics/index.html",
-        "views": 11708
+        "views": 11641
       },
       {
         "path": "/geology-geophysics/index.html",
-        "views": 9706
+        "views": 9365
       }
     ],
     "monthlyTrend": {
       "buckets": [
         {
-          "sessions": 148252,
-          "newUsers": 89982,
+          "sessions": 138643,
+          "newUsers": 82017,
           "bounceRate": 60
         },
         {
-          "sessions": 117513,
-          "newUsers": 65023,
-          "bounceRate": 56
+          "sessions": 115453,
+          "newUsers": 64334,
+          "bounceRate": 57
         },
         {
-          "sessions": 112879,
-          "newUsers": 70410,
+          "sessions": 114704,
+          "newUsers": 71930,
           "bounceRate": 60
         },
         {
-          "sessions": 106422,
-          "newUsers": 74350,
+          "sessions": 107752,
+          "newUsers": 75114,
           "bounceRate": 63
         },
         {
-          "sessions": 105086,
-          "newUsers": 76177,
-          "bounceRate": 66
+          "sessions": 102646,
+          "newUsers": 74681,
+          "bounceRate": 65
         },
         {
-          "sessions": 90793,
-          "newUsers": 67285,
+          "sessions": 89415,
+          "newUsers": 66881,
           "bounceRate": 67
         }
       ],
@@ -107,144 +107,144 @@
       {
         "name": "Mathematics",
         "path": "/mathematics/",
-        "sessions": 78466,
-        "newUsers": 27856,
-        "avgDuration": 127,
+        "sessions": 77580,
+        "newUsers": 27660,
+        "avgDuration": 126,
         "bounceRate": 32
       },
       {
         "name": "Biology",
         "path": "/biology/",
-        "sessions": 53897,
-        "newUsers": 15616,
-        "avgDuration": 176,
+        "sessions": 53667,
+        "newUsers": 15548,
+        "avgDuration": 175,
         "bounceRate": 28
       },
       {
         "name": "Chemistry",
         "path": "/chemistry/",
-        "sessions": 52357,
-        "newUsers": 16875,
+        "sessions": 52085,
+        "newUsers": 16710,
         "avgDuration": 156,
         "bounceRate": 31
       },
       {
         "name": "Psychological & Brain Sciences",
         "path": "/psychological-brain-sciences/",
-        "sessions": 51886,
-        "newUsers": 16584,
+        "sessions": 51382,
+        "newUsers": 16394,
         "avgDuration": 245,
         "bounceRate": 28
       },
       {
         "name": "Economics",
         "path": "/economics/",
-        "sessions": 24182,
-        "newUsers": 8608,
-        "avgDuration": 182,
+        "sessions": 24054,
+        "newUsers": 8553,
+        "avgDuration": 183,
         "bounceRate": 25
       },
       {
         "name": "English",
         "path": "/english/",
-        "sessions": 20918,
-        "newUsers": 13629,
-        "avgDuration": 144,
+        "sessions": 20377,
+        "newUsers": 13200,
+        "avgDuration": 146,
         "bounceRate": 33
-      },
-      {
-        "name": "Geology & Geophysics",
-        "path": "/geology-geophysics/",
-        "sessions": 18734,
-        "newUsers": 11795,
-        "avgDuration": 136,
-        "bounceRate": 37
       },
       {
         "name": "Statistics",
         "path": "/statistics/",
-        "sessions": 18420,
-        "newUsers": 6981,
+        "sessions": 18240,
+        "newUsers": 6898,
         "avgDuration": 170,
         "bounceRate": 25
       },
       {
+        "name": "Geology & Geophysics",
+        "path": "/geology-geophysics/",
+        "sessions": 18069,
+        "newUsers": 11113,
+        "avgDuration": 136,
+        "bounceRate": 37
+      },
+      {
         "name": "Physics & Astronomy",
         "path": "/physics-astronomy/",
-        "sessions": 17593,
-        "newUsers": 8224,
+        "sessions": 17494,
+        "newUsers": 8170,
         "avgDuration": 208,
         "bounceRate": 33
       },
       {
         "name": "Communication & Journalism",
         "path": "/comm-journalism/",
-        "sessions": 15053,
-        "newUsers": 5587,
+        "sessions": 14907,
+        "newUsers": 5538,
         "avgDuration": 115,
         "bounceRate": 27
       },
       {
         "name": "Atmospheric Sciences",
         "path": "/atmos-science/",
-        "sessions": 12010,
-        "newUsers": 7217,
-        "avgDuration": 196,
+        "sessions": 11828,
+        "newUsers": 7040,
+        "avgDuration": 195,
         "bounceRate": 37
       },
       {
         "name": "Geography",
         "path": "/geography/",
-        "sessions": 11980,
-        "newUsers": 6892,
-        "avgDuration": 160,
+        "sessions": 11720,
+        "newUsers": 6669,
+        "avgDuration": 161,
         "bounceRate": 33
       },
       {
         "name": "Sociology",
         "path": "/sociology/",
-        "sessions": 10959,
-        "newUsers": 6520,
+        "sessions": 10572,
+        "newUsers": 6194,
         "avgDuration": 158,
         "bounceRate": 37
       },
       {
         "name": "Global Languages & Cultures",
         "path": "/global-lang-cultures/",
-        "sessions": 10667,
-        "newUsers": 3992,
-        "avgDuration": 222,
+        "sessions": 10508,
+        "newUsers": 3895,
+        "avgDuration": 221,
         "bounceRate": 24
       },
       {
         "name": "Philosophy",
         "path": "/philosophy/",
-        "sessions": 10421,
-        "newUsers": 5478,
-        "avgDuration": 118,
-        "bounceRate": 34
+        "sessions": 10260,
+        "newUsers": 5353,
+        "avgDuration": 120,
+        "bounceRate": 33
       },
       {
         "name": "History",
         "path": "/history/",
-        "sessions": 9868,
-        "newUsers": 5116,
-        "avgDuration": 179,
-        "bounceRate": 28
+        "sessions": 9645,
+        "newUsers": 4947,
+        "avgDuration": 172,
+        "bounceRate": 27
       },
       {
         "name": "Oceanography",
         "path": "/oceanography/",
-        "sessions": 9260,
-        "newUsers": 6435,
+        "sessions": 9046,
+        "newUsers": 6223,
         "avgDuration": 123,
-        "bounceRate": 41
+        "bounceRate": 40
       },
       {
         "name": "Anthropology",
         "path": "/anthropology/",
-        "sessions": 7791,
-        "newUsers": 6082,
+        "sessions": 7697,
+        "newUsers": 6001,
         "avgDuration": 79,
         "bounceRate": 50
       }
@@ -257,94 +257,94 @@
       ],
       "departments": {
         "Anthropology": [
-          2230,
-          1717,
-          3958
+          2137,
+          1862,
+          3910
         ],
         "Atmospheric Sciences": [
-          4194,
-          4602,
-          2908
+          4037,
+          4646,
+          2760
         ],
         "Biology": [
-          22935,
-          17739,
-          13492
+          21932,
+          18131,
+          13523
         ],
         "Chemistry": [
-          19158,
-          17615,
-          14905
+          18397,
+          18162,
+          14752
         ],
         "Communication & Journalism": [
-          7659,
-          5335,
-          3201
+          7356,
+          5321,
+          3340
         ],
         "Economics": [
-          10521,
-          7932,
-          5585
+          10114,
+          7841,
+          5665
         ],
         "English": [
-          9929,
-          4173,
-          6147
+          9350,
+          4162,
+          6223
         ],
         "Geography": [
-          5683,
-          3946,
-          2648
+          5531,
+          4062,
+          2490
         ],
         "Geology & Geophysics": [
-          9874,
-          5479,
-          2598
+          9319,
+          5406,
+          2649
         ],
         "Global Languages & Cultures": [
-          5078,
-          3239,
-          2431
+          4951,
+          3072,
+          2380
         ],
         "History": [
-          4556,
-          3577,
-          1999
+          4813,
+          3557,
+          2003
         ],
         "Mathematics": [
-          31313,
-          25586,
-          19806
+          30682,
+          25775,
+          19567
         ],
         "Oceanography": [
-          4001,
-          2887,
-          1799
+          3874,
+          2920,
+          1749
         ],
         "Philosophy": [
-          5520,
-          2821,
-          1833
+          5386,
+          2860,
+          1780
         ],
         "Physics & Astronomy": [
-          7822,
-          5903,
-          4239
+          7794,
+          5753,
+          4294
         ],
         "Psychological & Brain Sciences": [
-          22421,
-          16247,
-          11696
+          21686,
+          16696,
+          11196
         ],
         "Sociology": [
-          6061,
-          3172,
-          2059
+          5818,
+          2964,
+          2049
         ],
         "Statistics": [
-          7924,
-          5964,
-          5054
+          7539,
+          6179,
+          4989
         ]
       }
     }
@@ -380,8 +380,8 @@
       "raw": 77
     },
     "brokenLinks": {
-      "value": "1695",
-      "raw": 1695
+      "value": "1670",
+      "raw": 1670
     },
     "qualityIssues": {
       "value": "137",
@@ -390,8 +390,8 @@
   },
   "freshdesk": {
     "ticketVolume": {
-      "value": "292",
-      "raw": 292
+      "value": "293",
+      "raw": 293
     },
     "resolutionRate": {
       "value": "91%",
@@ -408,7 +408,7 @@
     "deptBreakdown": [
       {
         "name": "Other / Unclassified",
-        "count": 172
+        "count": 173
       },
       {
         "name": "History",
@@ -449,52 +449,52 @@
     ],
     "ticketTrend": [
       {
-        "label": "Mar 31",
-        "count": 26
+        "label": "Apr 1",
+        "count": 23
       },
       {
-        "label": "Apr 7",
-        "count": 14
+        "label": "Apr 8",
+        "count": 9
       },
       {
-        "label": "Apr 14",
-        "count": 10
-      },
-      {
-        "label": "Apr 21",
-        "count": 28
-      },
-      {
-        "label": "Apr 28",
-        "count": 24
-      },
-      {
-        "label": "May 5",
-        "count": 21
-      },
-      {
-        "label": "May 12",
-        "count": 22
-      },
-      {
-        "label": "May 19",
-        "count": 38
-      },
-      {
-        "label": "May 26",
+        "label": "Apr 15",
         "count": 17
       },
       {
-        "label": "Jun 2",
-        "count": 13
+        "label": "Apr 22",
+        "count": 24
       },
       {
-        "label": "Jun 9",
+        "label": "Apr 29",
+        "count": 24
+      },
+      {
+        "label": "May 6",
         "count": 19
       },
       {
-        "label": "Jun 16",
-        "count": 15
+        "label": "May 13",
+        "count": 35
+      },
+      {
+        "label": "May 20",
+        "count": 30
+      },
+      {
+        "label": "May 27",
+        "count": 13
+      },
+      {
+        "label": "Jun 3",
+        "count": 13
+      },
+      {
+        "label": "Jun 10",
+        "count": 20
+      },
+      {
+        "label": "Jun 17",
+        "count": 13
       }
     ]
   },
@@ -503,8 +503,8 @@
     "hasData": true,
     "dataWindow": "Last 3 days (API limit)",
     "totalSessions": {
-      "value": "5.0k",
-      "raw": 5044
+      "value": "6.2k",
+      "raw": 6198
     },
     "uniqueUsers": {
       "value": "?",
@@ -515,12 +515,12 @@
       "raw": 0
     },
     "deadClicks": {
-      "value": "2.1k",
-      "raw": 2107
+      "value": "2.9k",
+      "raw": 2942
     },
     "deadClickRate": {
-      "value": "42%",
-      "raw": 42
+      "value": "47%",
+      "raw": 47
     },
     "rageClicks": {
       "value": "?",
@@ -531,8 +531,8 @@
       "raw": 0
     },
     "pageViews": {
-      "value": "792",
-      "raw": 792
+      "value": "1.0k",
+      "raw": 1028
     },
     "topPages": [],
     "rawData": [
@@ -546,20 +546,20 @@
         "Device": "Mobile"
       },
       {
-        "sessionsCount": "650",
-        "sessionsWithMetricPercentage": 8.15,
-        "sessionsWithoutMetricPercentage": 91.85,
-        "pagesViews": "57",
-        "subTotal": "89",
+        "sessionsCount": "699",
+        "sessionsWithMetricPercentage": 7.87,
+        "sessionsWithoutMetricPercentage": 92.13,
+        "pagesViews": "62",
+        "subTotal": "153",
         "Browser": "ChromeMobile",
         "Device": "Mobile"
       },
       {
-        "sessionsCount": "4",
-        "sessionsWithMetricPercentage": 50,
-        "sessionsWithoutMetricPercentage": 50,
-        "pagesViews": "2",
-        "subTotal": "2",
+        "sessionsCount": "6",
+        "sessionsWithMetricPercentage": 16.67,
+        "sessionsWithoutMetricPercentage": 83.33,
+        "pagesViews": "1",
+        "subTotal": "1",
         "Browser": "EdgeMobile",
         "Device": "Mobile"
       }
