@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-14T16:17:21.010Z",
+  "period": {
+    "days": 90,
+    "startDate": "2026-05-16",
+    "endDate": "2026-08-13",
+    "priorStartDate": "2026-02-15",
+    "priorEndDate": "2026-05-15",
+    "label": "Last 90 days"
+  },
+  "college": "College of Arts & Sciences",
+  "domains": [
+    "artsci.tamu.edu",
+    "liberalarts.tamu.edu"
+  ],
+  "index": {
+    "current": 0,
+    "previous": 0,
+    "change": null,
+    "weights": {
+      "searchImpressions": 1,
+      "searchClicks": 15,
+      "sessions": 8,
+      "engagedSessions": 12,
+      "socialImpressions": 1,
+      "socialEngagements": 25,
+      "mediaMentions": 40
+    },
+    "note": "Weighted sum of search, site and social signals, compared with the preceding 90 days using identical weights."
+  },
+  "ga4": {
+    "sessions": 0,
+    "engagedSessions": 0,
+    "newUsers": 0,
+    "pageViews": 0,
+    "engagementRate": 0,
+    "avgDuration": 0
+  },
+  "ga4ByDomain": {
+    "artsci": {
+      "sessions": 0,
+      "engagedSessions": 0,
+      "newUsers": 0,
+      "pageViews": 0,
+      "engagementRate": 0,
+      "avgDuration": 0
+    },
+    "liberalarts": {
+      "sessions": 0,
+      "engagedSessions": 0,
+      "newUsers": 0,
+      "pageViews": 0,
+      "engagementRate": 0,
+      "avgDuration": 0
+    }
+  },
+  "ga4Prior": {
+    "sessions": 0,
+    "engagedSessions": 0,
+    "newUsers": 0,
+    "pageViews": 0,
+    "engagementRate": 0,
+    "avgDuration": 0
+  },
+  "ga4Change": {
+    "sessions": null,
+    "engagedSessions": null,
+    "newUsers": null,
+    "pageViews": null
+  },
+  "searchConsole": {
+    "impressions": 0,
+    "clicks": 0,
+    "ctr": 0,
+    "position": 0,
+    "topQueries": []
+  },
+  "searchConsoleChange": {
+    "impressions": null,
+    "clicks": null
+  },
+  "topPages": [],
+  "monthlyTrend": [],
+  "siteimprove": {
+    "status": "not_configured",
+    "sites": []
+  },
+  "freshdesk": {
+    "status": "ok",
+    "ticketVolume": 331,
+    "resolvedCount": 239,
+    "resolutionRate": 72.2,
+    "byDepartment": [
+      {
+        "name": "Anthropology",
+        "tickets": 0
+      },
+      {
+        "name": "Atmospheric Sciences",
+        "tickets": 0
+      },
+      {
+        "name": "Biology",
+        "tickets": 0
+      },
+      {
+        "name": "Chemistry",
+        "tickets": 0
+      },
+      {
+        "name": "Communication & Journalism",
+        "tickets": 0
+      },
+      {
+        "name": "Economics",
+        "tickets": 0
+      },
+      {
+        "name": "English",
+        "tickets": 0
+      },
+      {
+        "name": "Geography",
+        "tickets": 0
+      },
+      {
+        "name": "Geology & Geophysics",
+        "tickets": 0
+      },
+      {
+        "name": "Global Languages & Cultures",
+        "tickets": 0
+      },
+      {
+        "name": "History",
+        "tickets": 0
+      },
+      {
+        "name": "Mathematics",
+        "tickets": 0
+      },
+      {
+        "name": "Oceanography",
+        "tickets": 0
+      },
+      {
+        "name": "Philosophy",
+        "tickets": 0
+      },
+      {
+        "name": "Physics & Astronomy",
+        "tickets": 0
+      },
+      {
+        "name": "Psychological & Brain Sciences",
+        "tickets": 0
+      },
+      {
+        "name": "Sociology",
+        "tickets": 0
+      },
+      {
+        "name": "Statistics",
+        "tickets": 0
+      }
+    ]
+  },
+  "clarity": {
+    "status": "ok",
+    "hasData": true,
+    "dataWindow": "Rolling 3 days (Clarity API limit)",
+    "totalSessions": 13402,
+    "uniqueUsers": 0,
+    "deadClicks": 6981,
+    "rageClicks": 280,
+    "scrollDepth": 46.5
+  },
+  "social": {
+    "status": "not_configured"
+  },
+  "socialChange": {
+    "impressions": null,
+    "engagements": null
+  },
+  "media": {
+    "status": "not_configured"
+  },
+  "mediaChange": {
+    "mentions": null
+  }
+}
