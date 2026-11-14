@@ -1,96 +1,96 @@
 {
-  "lastUpdated": "2026-11-12T13:15:05.049Z",
+  "lastUpdated": "2026-11-14T13:14:52.257Z",
   "reportPeriod": {
     "days": 90,
-    "startDate": "2026-08-14",
-    "endDate": "2026-11-12",
-    "startISO": "2026-08-14T12:14:52.593Z",
-    "endISO": "2026-11-12T13:14:52.593Z",
-    "label": "Aug 14, 2026 ? Nov 12, 2026"
+    "startDate": "2026-08-16",
+    "endDate": "2026-11-14",
+    "startISO": "2026-08-16T12:14:42.492Z",
+    "endISO": "2026-11-14T13:14:42.492Z",
+    "label": "Aug 16, 2026 ? Nov 14, 2026"
   },
   "college": "College of Arts & Sciences",
   "domain": "artsci.tamu.edu",
   "ga4": {
     "sessions": {
-      "value": "1240.8k",
-      "raw": 1240775
+      "value": "1259.0k",
+      "raw": 1258970
     },
     "newUsers": {
-      "value": "888.2k",
-      "raw": 888225
+      "value": "895.9k",
+      "raw": 895875
     },
     "engagementRate": {
-      "value": "29%",
-      "raw": 29
+      "value": "30%",
+      "raw": 30
     },
     "avgDuration": {
-      "value": "2:05",
-      "raw": 125
+      "value": "2:03",
+      "raw": 123
     },
     "pageViews": {
-      "value": "2559.8k",
-      "raw": 2559775
+      "value": "2564.3k",
+      "raw": 2564282
     },
     "bounceRate": {
-      "value": "71%",
-      "raw": 71
+      "value": "70%",
+      "raw": 70
     },
     "admissionsVisits": {
       "value": "36.3k",
-      "raw": 36318
+      "raw": 36313
     },
     "topPages": [
       {
         "path": "/geology-geophysics/index.html",
-        "views": 118733
+        "views": 120087
       },
       {
         "path": "/english/index.html",
-        "views": 73320
+        "views": 75710
       },
       {
         "path": "/",
-        "views": 61128
+        "views": 59870
       },
       {
         "path": "/geography/index.html",
-        "views": 53175
+        "views": 54821
       },
       {
         "path": "/sociology/index.html",
-        "views": 48162
+        "views": 48380
       }
     ],
     "monthlyTrend": {
       "buckets": [
         {
-          "sessions": 123541,
-          "newUsers": 68142,
-          "bounceRate": 55
+          "sessions": 140008,
+          "newUsers": 74029,
+          "bounceRate": 58
         },
         {
-          "sessions": 146737,
-          "newUsers": 78782,
-          "bounceRate": 61
+          "sessions": 136178,
+          "newUsers": 74810,
+          "bounceRate": 57
         },
         {
-          "sessions": 295413,
-          "newUsers": 246208,
-          "bounceRate": 77
+          "sessions": 316903,
+          "newUsers": 262225,
+          "bounceRate": 78
         },
         {
-          "sessions": 250676,
-          "newUsers": 199515,
+          "sessions": 248200,
+          "newUsers": 200257,
           "bounceRate": 79
         },
         {
-          "sessions": 182216,
-          "newUsers": 123791,
-          "bounceRate": 62
+          "sessions": 163790,
+          "newUsers": 107187,
+          "bounceRate": 59
         },
         {
-          "sessions": 222589,
-          "newUsers": 165461,
+          "sessions": 226042,
+          "newUsers": 171594,
           "bounceRate": 74
         }
       ],
@@ -107,145 +107,145 @@
       {
         "name": "Geology & Geophysics",
         "path": "/geology-geophysics/",
-        "sessions": 125503,
-        "newUsers": 112868,
-        "avgDuration": 120,
+        "sessions": 126638,
+        "newUsers": 114239,
+        "avgDuration": 117,
         "bounceRate": 29
       },
       {
         "name": "Chemistry",
         "path": "/chemistry/",
-        "sessions": 124556,
-        "newUsers": 44553,
-        "avgDuration": 145,
-        "bounceRate": 27
+        "sessions": 125583,
+        "newUsers": 44794,
+        "avgDuration": 147,
+        "bounceRate": 28
       },
       {
         "name": "Mathematics",
         "path": "/mathematics/",
-        "sessions": 105243,
-        "newUsers": 25216,
+        "sessions": 104894,
+        "newUsers": 25081,
         "avgDuration": 146,
-        "bounceRate": 26
+        "bounceRate": 27
       },
       {
         "name": "English",
         "path": "/english/",
-        "sessions": 85616,
-        "newUsers": 69465,
-        "avgDuration": 130,
+        "sessions": 87592,
+        "newUsers": 71880,
+        "avgDuration": 135,
         "bounceRate": 26
       },
       {
         "name": "Psychological & Brain Sciences",
         "path": "/psychological-brain-sciences/",
-        "sessions": 74590,
-        "newUsers": 17278,
-        "avgDuration": 163,
+        "sessions": 74756,
+        "newUsers": 17259,
+        "avgDuration": 164,
         "bounceRate": 23
       },
       {
         "name": "Biology",
         "path": "/biology/",
-        "sessions": 69217,
-        "newUsers": 15429,
-        "avgDuration": 150,
+        "sessions": 68757,
+        "newUsers": 15354,
+        "avgDuration": 148,
         "bounceRate": 23
       },
       {
         "name": "Geography",
         "path": "/geography/",
-        "sessions": 65435,
-        "newUsers": 50217,
-        "avgDuration": 165,
+        "sessions": 67371,
+        "newUsers": 51755,
+        "avgDuration": 167,
         "bounceRate": 28
       },
       {
         "name": "Communication & Journalism",
         "path": "/comm-journalism/",
-        "sessions": 54721,
-        "newUsers": 32030,
+        "sessions": 54476,
+        "newUsers": 32232,
         "avgDuration": 120,
-        "bounceRate": 25
+        "bounceRate": 24
       },
       {
         "name": "Sociology",
         "path": "/sociology/",
-        "sessions": 53539,
-        "newUsers": 45303,
-        "avgDuration": 125,
+        "sessions": 53701,
+        "newUsers": 45524,
+        "avgDuration": 127,
         "bounceRate": 32
       },
       {
         "name": "Economics",
         "path": "/economics/",
-        "sessions": 46290,
-        "newUsers": 19847,
-        "avgDuration": 163,
+        "sessions": 47117,
+        "newUsers": 20616,
+        "avgDuration": 165,
         "bounceRate": 23
       },
       {
         "name": "History",
         "path": "/history/",
-        "sessions": 42692,
-        "newUsers": 34001,
-        "avgDuration": 130,
+        "sessions": 42663,
+        "newUsers": 34119,
+        "avgDuration": 118,
         "bounceRate": 28
       },
       {
         "name": "Atmospheric Sciences",
         "path": "/atmos-science/",
-        "sessions": 41438,
-        "newUsers": 31674,
-        "avgDuration": 111,
-        "bounceRate": 29
+        "sessions": 41547,
+        "newUsers": 32148,
+        "avgDuration": 108,
+        "bounceRate": 31
       },
       {
         "name": "Physics & Astronomy",
         "path": "/physics-astronomy/",
-        "sessions": 28237,
-        "newUsers": 11227,
+        "sessions": 28178,
+        "newUsers": 11204,
         "avgDuration": 114,
-        "bounceRate": 21
+        "bounceRate": 22
       },
       {
         "name": "Oceanography",
         "path": "/oceanography/",
-        "sessions": 26929,
-        "newUsers": 17847,
-        "avgDuration": 174,
-        "bounceRate": 30
+        "sessions": 27417,
+        "newUsers": 18204,
+        "avgDuration": 175,
+        "bounceRate": 31
       },
       {
         "name": "Global Languages & Cultures",
         "path": "/global-lang-cultures/",
-        "sessions": 26059,
-        "newUsers": 15505,
-        "avgDuration": 90,
-        "bounceRate": 22
+        "sessions": 26443,
+        "newUsers": 15844,
+        "avgDuration": 89,
+        "bounceRate": 23
       },
       {
         "name": "Statistics",
         "path": "/statistics/",
-        "sessions": 22538,
-        "newUsers": 8349,
+        "sessions": 22602,
+        "newUsers": 8375,
         "avgDuration": 158,
-        "bounceRate": 25
+        "bounceRate": 26
       },
       {
         "name": "Anthropology",
         "path": "/anthropology/",
-        "sessions": 14673,
-        "newUsers": 6253,
-        "avgDuration": 157,
+        "sessions": 14603,
+        "newUsers": 6224,
+        "avgDuration": 138,
         "bounceRate": 21
       },
       {
         "name": "Philosophy",
         "path": "/philosophy/",
-        "sessions": 12027,
-        "newUsers": 5787,
-        "avgDuration": 108,
+        "sessions": 12025,
+        "newUsers": 5791,
+        "avgDuration": 106,
         "bounceRate": 29
       }
     ],
@@ -257,94 +257,94 @@
       ],
       "departments": {
         "Anthropology": [
-          5369,
-          2905,
-          6285
+          5475,
+          2904,
+          6211
         ],
         "Atmospheric Sciences": [
-          5464,
-          29007,
-          5699
+          5593,
+          29419,
+          5712
         ],
         "Biology": [
-          25368,
-          19317,
-          16090
+          26126,
+          19938,
+          15252
         ],
         "Chemistry": [
-          49796,
-          45917,
-          20334
+          50593,
+          46279,
+          19614
         ],
         "Communication & Journalism": [
-          11692,
-          31628,
-          10614
+          12000,
+          33913,
+          7849
         ],
         "Economics": [
-          13887,
-          17814,
-          13206
+          14495,
+          18311,
+          12638
         ],
         "English": [
-          6893,
-          52874,
-          23350
+          7125,
+          54586,
+          23946
         ],
         "Geography": [
-          8650,
-          45738,
-          9725
+          8538,
+          47913,
+          9093
         ],
         "Geology & Geophysics": [
-          5889,
-          99688,
-          18440
+          6009,
+          105148,
+          15392
         ],
         "Global Languages & Cultures": [
-          5349,
-          2796,
-          17602
+          5416,
+          2858,
+          17871
         ],
         "History": [
-          5335,
-          4445,
-          32218
+          5627,
+          4958,
+          32064
         ],
         "Mathematics": [
-          34272,
-          32962,
-          32881
+          36266,
+          31572,
+          31394
         ],
         "Oceanography": [
-          5528,
-          14863,
-          5327
+          5691,
+          15235,
+          5210
         ],
         "Philosophy": [
-          3168,
-          5564,
-          3493
+          3213,
+          5630,
+          3364
         ],
         "Physics & Astronomy": [
-          7931,
-          7364,
-          8350
+          8479,
+          6945,
+          8223
         ],
         "Psychological & Brain Sciences": [
-          26277,
-          26557,
-          20453
+          27375,
+          27037,
+          18406
         ],
         "Sociology": [
-          6683,
-          8745,
-          39064
+          6727,
+          9773,
+          37874
         ],
         "Statistics": [
-          7210,
-          8978,
-          5024
+          7398,
+          8969,
+          5167
         ]
       }
     }
@@ -380,8 +380,8 @@
       "raw": 80
     },
     "brokenLinks": {
-      "value": "1494",
-      "raw": 1494
+      "value": "1490",
+      "raw": 1490
     },
     "qualityIssues": {
       "value": "41",
@@ -390,16 +390,16 @@
   },
   "freshdesk": {
     "ticketVolume": {
-      "value": "300",
-      "raw": 300
+      "value": "486",
+      "raw": 486
     },
     "resolutionRate": {
-      "value": "91%",
-      "raw": 91
+      "value": "93%",
+      "raw": 93
     },
     "avgResponseTime": {
-      "value": "18.8h",
-      "raw": "18.8"
+      "value": "15.6h",
+      "raw": "15.6"
     },
     "csatScore": {
       "value": "N/A",
@@ -408,22 +408,26 @@
     "deptBreakdown": [
       {
         "name": "Other / Unclassified",
-        "count": 281
+        "count": 455
       },
       {
         "name": "Chemistry",
-        "count": 8
+        "count": 9
       },
       {
         "name": "Geography",
-        "count": 3
+        "count": 8
       },
       {
         "name": "English",
-        "count": 2
+        "count": 4
       },
       {
         "name": "Biology",
+        "count": 3
+      },
+      {
+        "name": "Sociology",
         "count": 2
       },
       {
@@ -435,62 +439,62 @@
         "count": 1
       },
       {
-        "name": "Sociology",
+        "name": "Oceanography",
         "count": 1
       },
       {
-        "name": "Oceanography",
+        "name": "Anthropology",
         "count": 1
       }
     ],
     "ticketTrend": [
       {
-        "label": "Aug 27",
-        "count": 0
+        "label": "Aug 29",
+        "count": 48
       },
       {
-        "label": "Sep 3",
-        "count": 31
+        "label": "Sep 5",
+        "count": 39
       },
       {
-        "label": "Sep 10",
-        "count": 24
+        "label": "Sep 12",
+        "count": 27
       },
       {
-        "label": "Sep 17",
-        "count": 28
+        "label": "Sep 19",
+        "count": 27
       },
       {
-        "label": "Sep 24",
-        "count": 47
+        "label": "Sep 26",
+        "count": 50
       },
       {
-        "label": "Oct 1",
-        "count": 34
+        "label": "Oct 3",
+        "count": 32
       },
       {
-        "label": "Oct 8",
-        "count": 24
+        "label": "Oct 10",
+        "count": 20
       },
       {
-        "label": "Oct 15",
-        "count": 23
-      },
-      {
-        "label": "Oct 22",
+        "label": "Oct 17",
         "count": 22
       },
       {
-        "label": "Oct 29",
-        "count": 35
+        "label": "Oct 24",
+        "count": 37
       },
       {
-        "label": "Nov 5",
-        "count": 16
+        "label": "Oct 31",
+        "count": 21
       },
       {
-        "label": "Nov 12",
-        "count": 16
+        "label": "Nov 7",
+        "count": 14
+      },
+      {
+        "label": "Nov 14",
+        "count": 18
       }
     ]
   },
@@ -499,8 +503,8 @@
     "hasData": true,
     "dataWindow": "Last 3 days (API limit)",
     "totalSessions": {
-      "value": "58.0k",
-      "raw": 57997
+      "value": "67.3k",
+      "raw": 67333
     },
     "uniqueUsers": {
       "value": "?",
@@ -511,12 +515,12 @@
       "raw": 0
     },
     "deadClicks": {
-      "value": "13.4k",
-      "raw": 13359
+      "value": "11.9k",
+      "raw": 11862
     },
     "deadClickRate": {
-      "value": "23%",
-      "raw": 23
+      "value": "18%",
+      "raw": 18
     },
     "rageClicks": {
       "value": "?",
@@ -527,37 +531,232 @@
       "raw": 0
     },
     "pageViews": {
-      "value": "4.7k",
-      "raw": 4692
+      "value": "4.1k",
+      "raw": 4076
     },
     "topPages": [],
     "rawData": [
       {
-        "sessionsCount": 12,
-        "sessionsWithMetricPercentage": 8.33,
-        "sessionsWithoutMetricPercentage": 91.67,
+        "sessionsCount": 2,
+        "sessionsWithMetricPercentage": 50,
+        "sessionsWithoutMetricPercentage": 50,
         "pagesViews": 1,
         "subTotal": 1,
         "Browser": "Other",
         "Device": "Mobile"
       },
       {
-        "sessionsCount": 2014,
-        "sessionsWithMetricPercentage": 6.01,
-        "sessionsWithoutMetricPercentage": 93.99,
-        "pagesViews": 147,
-        "subTotal": 259,
-        "Browser": "ChromeMobile",
+        "sessionsCount": 1,
+        "sessionsWithMetricPercentage": 0,
+        "sessionsWithoutMetricPercentage": 100,
+        "pagesViews": 0,
+        "subTotal": 0,
+        "Browser": "Chrome",
         "Device": "Mobile"
       },
       {
-        "sessionsCount": 3,
-        "sessionsWithMetricPercentage": 33.33,
-        "sessionsWithoutMetricPercentage": 66.67,
-        "pagesViews": 1,
-        "subTotal": 1,
-        "Browser": "Edge",
+        "sessionsCount": 2191,
+        "sessionsWithMetricPercentage": 5.07,
+        "sessionsWithoutMetricPercentage": 94.93,
+        "pagesViews": 125,
+        "subTotal": 223,
+        "Browser": "ChromeMobile",
         "Device": "Mobile"
+      }
+    ]
+  },
+  "searchConsole": {
+    "error": "Search Console site list HTTP 403: Google Search Console API has not been used in project 855574159699 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/searchconsole.googleapis.com/overview?project=855574159699 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+  },
+  "siteSearch": {
+    "totalSearches": 5940,
+    "uniqueTerms": 3303,
+    "topics": [
+      {
+        "id": "courses",
+        "label": "Courses and exams",
+        "count": 931,
+        "topTerms": [
+          "math 152",
+          "math 151",
+          "math152",
+          "math151",
+          "python"
+        ],
+        "share": 15.7
+      },
+      {
+        "id": "programs",
+        "label": "Majors, minors, programs",
+        "count": 312,
+        "topTerms": [
+          "public health",
+          "zoology",
+          "majors",
+          "neuroscience",
+          "online"
+        ],
+        "share": 5.3
+      },
+      {
+        "id": "advising",
+        "label": "Advising and course permissions",
+        "count": 273,
+        "topTerms": [
+          "readmission",
+          "advising",
+          "advisory board",
+          "advisors",
+          "advisor"
+        ],
+        "share": 4.6
+      },
+      {
+        "id": "cost",
+        "label": "Cost, aid, scholarships",
+        "count": 144,
+        "topTerms": [
+          "tuition",
+          "scholarship",
+          "scholarships",
+          "cost",
+          "application fee waiver"
+        ],
+        "share": 2.4
+      },
+      {
+        "id": "careers",
+        "label": "Careers, jobs, internships",
+        "count": 79,
+        "topTerms": [
+          "career fair",
+          "jobs",
+          "internship",
+          "careers",
+          "job"
+        ],
+        "share": 1.3
+      },
+      {
+        "id": "admissions",
+        "label": "Admissions and applying",
+        "count": 70,
+        "topTerms": [
+          "apply",
+          "admissions",
+          "toefl",
+          "apply travel funds",
+          "admission"
+        ],
+        "share": 1.2
+      },
+      {
+        "id": "research",
+        "label": "Research",
+        "count": 51,
+        "topTerms": [
+          "research",
+          "reu",
+          "psychology research",
+          "bridges lab",
+          "lab operations"
+        ],
+        "share": 0.9
+      },
+      {
+        "id": "honors",
+        "label": "Dean's list and honors",
+        "count": 47,
+        "topTerms": [
+          "awards",
+          "honors",
+          "deans list",
+          "dean's list",
+          "honor roll"
+        ],
+        "share": 0.8
+      }
+    ],
+    "topTerms": [
+      {
+        "term": "math 152",
+        "count": 281
+      },
+      {
+        "term": "math 151",
+        "count": 280
+      },
+      {
+        "term": "search",
+        "count": 62
+      },
+      {
+        "term": "faculty",
+        "count": 47
+      },
+      {
+        "term": "readmission",
+        "count": 41
+      },
+      {
+        "term": "advising",
+        "count": 40
+      },
+      {
+        "term": "math152",
+        "count": 36
+      },
+      {
+        "term": "advisory board",
+        "count": 27
+      },
+      {
+        "term": "study abroad",
+        "count": 27
+      },
+      {
+        "term": "tuition",
+        "count": 27
+      },
+      {
+        "term": "math151",
+        "count": 25
+      },
+      {
+        "term": "python",
+        "count": 24
+      },
+      {
+        "term": "psychology",
+        "count": 20
+      },
+      {
+        "term": "public health",
+        "count": 18
+      },
+      {
+        "term": "scholarship",
+        "count": 18
+      },
+      {
+        "term": "152",
+        "count": 17
+      },
+      {
+        "term": "scholarships",
+        "count": 17
+      },
+      {
+        "term": "math 251",
+        "count": 17
+      },
+      {
+        "term": "career fair",
+        "count": 16
+      },
+      {
+        "term": "courses",
+        "count": 15
       }
     ]
   },
@@ -742,5 +941,35 @@
       "platform": "Cascade",
       "monitored": true
     }
-  ]
+  ],
+  "studentQuestionsAI": {
+    "headline": "Courses dominate site searches; career and research content draws far less traffic than expected.",
+    "summary": "Between August 16 and November 14, 2026, the site drew nearly 1.26 million visits, and roughly 895,000 of those visitors were arriving for the first time. Among people who used the site's internal search, course-related terms accounted for 15.7 percent of searches, while careers accounted for 1.3 percent and research just 0.9 percent?suggesting that high-priority recruiting topics are not yet pulling students into the site through search.",
+    "questions": [
+      {
+        "n": 1,
+        "insight": "Careers, jobs, and internships made up only 1.3 percent of internal searches, which likely reflects thin content on outcomes rather than low student interest?departments supplying graduate placement and career destination data would give this topic more substance to surface."
+      },
+      {
+        "n": 2,
+        "insight": "Majors, minors, and programs accounted for 5.3 percent of internal searches, with public health, zoology, and neuroscience among the top terms, pointing to specific programs where prospective students are actively looking for information."
+      },
+      {
+        "n": 3,
+        "insight": "Advising and course permissions drew 4.6 percent of internal searches, with readmission appearing as the top term, suggesting students are navigating consequential academic transitions and need clear pathways to the right advisor."
+      },
+      {
+        "n": 4,
+        "insight": "Research terms made up just 0.9 percent of internal searches, though specific entries like 'REU,' 'psychology research,' and 'bridges lab' show that some students arrive with concrete programs in mind and need pages that match those terms."
+      },
+      {
+        "n": 5,
+        "insight": "Graduate-related terms do not appear among the recorded search topics for this period, which makes it difficult to assess demand?departments sharing funding details, application deadlines, and graduate placement records would create pages that give this question a presence in search."
+      }
+    ],
+    "ask": "The single most useful step departments can take now is to submit graduate program funding information, application deadlines, and graduate placement records so the web team can build pages that answer the questions prospective graduate students are most likely to search.",
+    "generatedAt": "2026-11-14T13:16:53.245Z",
+    "model": "claude-sonnet-4-6",
+    "basedOn": "Aug 16, 2026 ? Nov 14, 2026"
+  }
 }
